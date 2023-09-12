@@ -1,0 +1,295 @@
+%-------------------------
+% Resume in Latex
+% Author : Matty
+% Based on: https://github.com/jakegut/resume (which was based on https://github.com/sb2nov/resume)
+% License : MIT
+%------------------------
+
+\documentclass{article}
+\usepackage[paperwidth=8.5in,paperheight=20in,margin=1in]{geometry}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+\input{glyphtounicode}
+
+% -------------------- FONT --------------------
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in} % Default was -.5in
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4.08003pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING--------------------
+\begin{flushright}
+  \vspace{-4pt}
+  \color{gray}
+  \item
+  Last Updated on August 12th, 2023
+\end{flushright}
+
+\vspace{-7pt}
+
+\begin{center}
+    \textbf{\Huge \scshape Adhitya Thirumala} \\ \vspace{8pt}
+    \small 
+    \faIcon{github}
+    \href{https://github.com/adhi-thirumala}{\underline{https://github.com/adhi-thirumala}} $  $
+    \faIcon{linkedin}
+    \href{www.linkedin.com/in/adhitya-thirumala}
+    {\underline{linkedin.com/in/adhitya-thirumala}} $  $
+    \faIcon{envelope}
+    \href{mailto:adhi.thirumala@gmail.com}
+    {\underline{adhi.thirumala@gmail.com}} $  $
+    \faIcon{phone-square}
+    \href{tel:14124156157}{\underline{+1 (412) 415-6157}}
+
+\end{center}
+
+% -------------------- EDUCATION --------------------
+\section{Education}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Fox Chapel Area High School }{2020-Present}
+      {}{GPA: 4.26/4.0, SAT: 1550 (790 Math, 760 EBRW)}
+
+    \vspace{-10pt}
+    \subsection{Relevant Coursework}
+      \textbf{AP Classes:} AP Computer Science Principles(5), AP Computer Science A(5), AP World History(5), AP US History(5), AP Calculus AB(5), AP Calculus BC(5), AP Chemistry, AP Physics C: Electricity and Magnetism(5), AP English Language and Composition(4) \\
+      \textbf{Academic Awards:} 
+AP Scholar with Distinction (2023), National Merit Qualifying Test Semifinalist (2023)
+
+
+  \resumeSubHeadingListEnd
+% -------------------- WORK --------------------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+          {\textbf{Kumon Fox Chapel} $|$ \footnotesize\emph{Assistant for Center Operation}\vspace{8pt}}{2021 - Present}
+          {\small{Successfully improved the self-initiated learning abilities of students (Pre K-9) in language arts \& math
+(arithmetic-calculus). Graded students' daily work and tutored students through concepts.
+Entered student homework data into online computer system. Coordinated work with other employees to maximise efficiency in center}}
+\resumeSubHeadingListEnd
+
+% -------------------- SKILLS --------------------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    
+     \textbf{Languages:}{ Python, Java, Javascript, HTML/CSS, \LaTeX} \\
+     
+     \textbf{Tools:}{ Git/GitHub, Bash Shell, VS Code, Huggingface, Linux}\\
+          % \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+         \textbf{Libraries:}{ pandas, NumPy, Matplotlib, Tensorflow, pyTorch}
+     
+    }}
+ \end{itemize}
+
+
+
+% -------------------- PROJECTS --------------------
+\section{Projects}
+    \resumeSubHeadingListStart
+    
+        \resumeProjectHeading
+        {\textbf{Clickbait Classification and Spoiling Using Natural Language Processing}}{October 2022 - May 2023}
+        \resumeItemListStart
+            \resumeItem{Developed natural language processing models to classify and spoil clickbait}
+            \resumeItem{Utilized Large Language models and prompt engineering to generate spoilers}
+            \resumeItem{Results submitted to The 17th International Workshop on Semantic Evaluation: Toronto, Canada 2023}
+            \resumeItem{Published to arXiv: \href{https://doi.org/10.48550/arXiv.2306.14907}{\textcolor{blue}{Link}}}
+            \resumeItem{Mentored by Dr. Elisa Ferracane}
+        \resumeItemListEnd
+        \resumeProjectHeading
+        {\textbf{Extractive Question Answering on Queries in Hindi and Tami}}{October 2021 - May 2022}
+        \resumeItemListStart
+            \resumeItem{Developed Extractive Question Answering (QA) models in Tamil and Hindi with public dataset}
+              \resumeItem{Improved performance of such models as compared to gold-standard}
+            \resumeItem{Modified Tokenizer to accept input in Hindi and Tamil to minimize need for data and training}
+            \resumeItem{Published to arXiv: \href{https://doi.org/10.48550/arXiv.2210.06356}{\textcolor{blue}{Link}}}
+            \resumeItem{Mentored by Dr. Elisa Ferracane}
+        \resumeItemListEnd
+        \resumeProjectHeading
+        {\textbf{S.W.I.F.T.: Surveillance With Intelligent Field Technology}}{September 2020 - May 2021}
+        \resumeItemListStart
+            \resumeItem{Created machine learning classifier that can detect the presence of certain bird species (such as chimney swifts) in an image.}
+            \resumeItem{Utilized openCV and Tensorflow to create machine learning models}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+% -------------------- EXPERIENCE --------------------
+\section{Extracurricular Activities}
+  \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+          {\textbf{Forensics and Model UN Club} $|$ \footnotesize\emph{'22-'23: Director of Debate, '23-Present: President }\vspace{8pt}}{2020 - Present}
+          {\small{Intensively researched and debated on the national circuit. Coached and taught novice students who qualified for state championships. To improve performance in tournaments conducted after school practice sessions. Judged local novice tournaments. Created club-branded merchandise. Spearheaded fundraising efforts for competition travel.}}
+
+   
+        \resumeProjectHeading
+          {\textbf{Science Fair Club} $|$ \footnotesize\emph{'22-Present: President}\vspace{8pt}}{2017 - Present}
+          {\small{Promoted science fair opportunities throughout the high school, increased state participation in PJAS by 20\%. Mentored younger students and taught presentation skills. Volunteered at an elementary school science fair to teach science concepts  through basic demonstrations and to judge projects. }}
+
+        \resumeProjectHeading
+          {\textbf{AI Catalyst Conversations} $|$ \footnotesize\emph{Founder, President}\vspace{8pt}}{August 2023 - Present}
+          {\small{Founded and promoted an organization that promotes AI through webinars featuring industry experts. Created and led club members throughout multiple chapters at various local schools.}}
+
+        \resumeProjectHeading
+          {\textbf{Asian Cultural Club}\vspace{8pt} $|$ \footnotesize\emph{Member}}{2021 - Present}
+          {\small{Promoted cultural awareness through weekly club meetings and Asian food/drink sales to high school students and teachers. Performed in a community dance showcase featuring cultures from around the world. Raised Funds through club events to support future club activities}}
+         
+    \resumeSubHeadingListEnd 
+% -------------------- Volunteer --------------------
+\section{Volunteer Activities}
+  \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{Mini Golf Fundraiser} $|$ \footnotesize\emph{Founder, Leader of Fundraising Activities}\vspace{8pt}}{2021 - Present}
+          {\small{2021: Organized a Mini Golf fundraiser for Indian CoVID relief. Raised \$2500, which was donated to EKAM ® Foundation  for purchase of oxygen, and infant warmers given to primary health centers in South India.
+
+2022: Organized a Mini Golf fundraiser for Bethlehem Haven, a local women’s shelter, whose mission is to provide a continuum of care for homeless women that leads toward self-sufficiency. Raised \$2000, towards the purchase of an Automated External Defibrillator, it can be used to help those experiencing sudden cardiac arrest. 
+
+2023: Organized a  Mini Golf fundraiser, with Moonyoung Hwang, for Bethlehem Haven. Raised \$2000 for the renovation of their main residence, funds will be used for furnishing a room for homeless women to stay during their path to self-sufficiency. 
+
+}}
+
+   
+        \resumeProjectHeading
+          {\textbf{Audubon Naturalist in Training (A.N.T.)} $|$ \footnotesize\emph{Training Camp Counselor, Audubon Society of Western PA}\vspace{8pt}}{2021 - Present}
+          {\small{Counselor for youth nature camp, led nature walks, crafts \& games to teach children from ages 5-12 about
+local flora and fauna. Volunteered at nature shop, assisted as cashier and in daily operations. Collected bird presence data throughout the nature preserve by both visual and aural identification, visual data was submitted to Project Feederwatch.}}
+            \resumeSubHeadingListEnd 
+\section{Research Awards}
+   \resumeSubHeadingListStart
+    
+        \resumeProjectHeading
+        {\textbf{Pennsylvania Junior Academy of Science Regional and State First Place}}{2021 - 2023}
+        \resumeProjectHeading
+        {\textbf{Pittsburgh Regional Science and Engineering Fair (PRSEF) Scholarship Award: Slippery Rock University}}{2023}
+        \resumeProjectHeading
+        {\textbf{26th Annual Senior Division Carnegie Science Award at PRSEF}}{2022}
+        \resumeProjectHeading
+        {\textbf{Associate Scientist Award at PRSEF}}{2022}
+        \resumeProjectHeading
+        {\textbf{Junior Scientist Award at PRSEF}}{2021}
+        \resumeProjectHeading
+        {\textbf{Broadcom MASTERS Top 300 Selection}}{2020}
+
+ 
+    \resumeSubHeadingListEnd
+\section{Summer Debate Workshop}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+          {\textbf{University of Michigan Debate Institute Seven Week Program}\vspace{8pt}}{2023}
+          {\small{ Seven week summer workshop for Top Senior National Debaters. 
+Significantly improved research skills, strategic vision \& speaking ability through intensive lectures, classes \& practice debates on the topic “The United States federal government should substantially increase fiscal redistribution in the United States by adopting a federal jobs guarantee, expanding Social Security, and/or providing a basic income.”}}
+ \resumeProjectHeading
+          {\textbf{University of Michigan Debate Institute Classic Plus Program}\vspace{8pt}}{2022}
+          {\small{Four week summer workshop. 
+Significantly improved research skills, strategic vision \& speaking ability through intensive lectures, classes \& practice debates on the topic “The United States federal government should substantially increase its security cooperation with the North Atlantic Treaty Organization in one or more of the following areas: artificial intelligence, biotechnology, cybersecurity.”}}
+\resumeSubHeadingListEnd
+\section{Debate Awards}
+   \resumeSubHeadingListStart
+    
+        \resumeProjectHeading
+        {\textbf{Outstanding Distinction in NSDA Honor Society (Top 0.4\% USA, \#1 PA Policy Debate)}}{2023}
+        \resumeProjectHeading
+        {\textbf{\#91 out of 1350 teams NDCA Baker Leaderboard}}{2023}
+        \resumeProjectHeading
+        {\textbf{National Catholic Forensics League Grand Nationals Octafinalist}}{2023}
+        \resumeProjectHeading
+        {\textbf{National Catholic Forensics League Grand Nationals Double-Octafinalist (Top 32)}}{2022}
+        \resumeProjectHeading
+        {\textbf{PA State Champion Policy Debate}}{2023}
+        \resumeProjectHeading
+        {\textbf{PA State Quarterfinalist Policy Debate}}{2022}
+     
+
+    \resumeSubHeadingListEnd
+\section{Volunteer Awards}
+  \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{Presidential Volunteer Service Bronze Award}}{2022}
+        \resumeProjectHeading
+        {\textbf{Presidential Volunteer Service Gold Award}}{2021}
+      \resumeSubHeadingListEnd
+\end{document}
