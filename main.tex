@@ -6,7 +6,7 @@
 %------------------------
 
 \documentclass{article}
-\usepackage[paperwidth=8.5in,paperheight=20in,margin=1in]{geometry}
+\usepackage[paperwidth=8.5in,paperheight=22in,margin=1in]{geometry}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -103,7 +103,7 @@
   \vspace{-4pt}
   \color{gray}
   \item
-  Last Updated on August 12th, 2023
+  Last Updated \today
 \end{flushright}
 
 \vspace{-7pt}
@@ -119,8 +119,7 @@
     \faIcon{envelope}
     \href{mailto:adhi.thirumala@gmail.com}
     {\underline{adhi.thirumala@gmail.com}} $  $
-    \faIcon{phone-square}
-    \href{tel:14124156157}{\underline{+1 (412) 415-6157}}
+
 
 \end{center}
 
@@ -128,28 +127,20 @@
 \section{Education}
   \resumeSubHeadingListStart
 
+    \resumeSubheading{University of Illinois Urbana-Champaign} {2024-Present} {Major: Computer Science + Linguistics}{}
     \resumeSubheading
-      {Fox Chapel Area High School }{2020-Present}
-      {}{GPA: 4.26/4.0, SAT: 1550 (790 Math, 760 EBRW)}
+      {Fox Chapel Area High School }{2020-2024}
+      {}{GPA: 4.32/4.0, SAT: 1550 (790 Math, 760 EBRW)}
 
     \vspace{-10pt}
-    \subsection{Relevant Coursework}
-      \textbf{AP Classes:} AP Computer Science Principles(5), AP Computer Science A(5), AP World History(5), AP US History(5), AP Calculus AB(5), AP Calculus BC(5), AP Chemistry, AP Physics C: Electricity and Magnetism(5), AP English Language and Composition(4) \\
+    \subsection{Relevant High School Coursework}
+    \textbf{Important non-AP Classes:} Linear Algebra, Data Structures and Algorithms \\
+      \textbf{AP Classes:} AP Computer Science Principles(5), AP Computer Science A(5), AP World History(5), AP US History(5), AP Calculus AB(5), AP Calculus BC(5), AP Chemistry, AP Physics C: Electricity and Magnetism(5), AP English Language and Composition(4), AP Statistics, AP Physics C: Mechanics, AP US Government and Politics, AP English Literature and Composition \\
       \textbf{Academic Awards:} 
-AP Scholar with Distinction (2023), National Merit Qualifying Test Semifinalist (2023)
+AP Scholar with Distinction (2023), National Merit Qualifying Test Finalist (2023)
 
 
   \resumeSubHeadingListEnd
-% -------------------- WORK --------------------
-\section{Work Experience}
-  \resumeSubHeadingListStart
-
-        \resumeProjectHeading
-          {\textbf{Kumon Fox Chapel} $|$ \footnotesize\emph{Assistant for Center Operation}\vspace{8pt}}{2021 - Present}
-          {\small{Successfully improved the self-initiated learning abilities of students (Pre K-9) in language arts \& math
-(arithmetic-calculus). Graded students' daily work and tutored students through concepts.
-Entered student homework data into online computer system. Coordinated work with other employees to maximise efficiency in center}}
-\resumeSubHeadingListEnd
 
 % -------------------- SKILLS --------------------
 \section{Skills}
@@ -158,9 +149,9 @@ Entered student homework data into online computer system. Coordinated work with
     
      \textbf{Languages:}{ Python, Java, Javascript, HTML/CSS, \LaTeX} \\
      
-     \textbf{Tools:}{ Git/GitHub, Bash Shell, VS Code, Huggingface, Linux}\\
+     \textbf{Tools:}{ Git/GitHub, Bash Shell, VS Code, Huggingface, Linux, GPT-3}\\
           % \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
-         \textbf{Libraries:}{ pandas, NumPy, Matplotlib, Tensorflow, pyTorch}
+         \textbf{Libraries:}{ pandas, NumPy, Matplotlib, Tensorflow, pyTorch, Swing(Java)}
      
     }}
  \end{itemize}
@@ -175,39 +166,56 @@ Entered student homework data into online computer system. Coordinated work with
         {\textbf{Clickbait Classification and Spoiling Using Natural Language Processing}}{October 2022 - May 2023}
         \resumeItemListStart
             \resumeItem{Developed natural language processing models to classify and spoil clickbait}
-            \resumeItem{Utilized Large Language models and prompt engineering to generate spoilers}
-            \resumeItem{Results submitted to The 17th International Workshop on Semantic Evaluation: Toronto, Canada 2023}
+            \resumeItem{Utilized Large Language Models and prompt engineering to generate spoilers}
+            \resumeItem{Results submitted to \textit{The 17th International Workshop on Semantic Evaluation}: Toronto, Canada 2023}
             \resumeItem{Published to arXiv: \href{https://doi.org/10.48550/arXiv.2306.14907}{\textcolor{blue}{Link}}}
             \resumeItem{Mentored by Dr. Elisa Ferracane}
         \resumeItemListEnd
         \resumeProjectHeading
-        {\textbf{Extractive Question Answering on Queries in Hindi and Tami}}{October 2021 - May 2022}
+        {\textbf{Extractive Question Answering on Queries in Hindi and Tamil}}{October 2021 - May 2022}
         \resumeItemListStart
             \resumeItem{Developed Extractive Question Answering (QA) models in Tamil and Hindi with public dataset}
               \resumeItem{Improved performance of such models as compared to gold-standard}
-            \resumeItem{Modified Tokenizer to accept input in Hindi and Tamil to minimize need for data and training}
+            \resumeItem{Modified RoBERTa tokenizer to accept input in Hindi and Tamil to minimize need for data and training}
             \resumeItem{Published to arXiv: \href{https://doi.org/10.48550/arXiv.2210.06356}{\textcolor{blue}{Link}}}
             \resumeItem{Mentored by Dr. Elisa Ferracane}
         \resumeItemListEnd
         \resumeProjectHeading
         {\textbf{S.W.I.F.T.: Surveillance With Intelligent Field Technology}}{September 2020 - May 2021}
         \resumeItemListStart
-            \resumeItem{Created machine learning classifier that can detect the presence of certain bird species (such as chimney swifts) in an image.}
-            \resumeItem{Utilized openCV and Tensorflow to create machine learning models}
-        \resumeItemListEnd
+            \resumeItem{Created machine learning classifier that can detect the presence of certain bird species (such as chimney swifts) in an image}
+                \resumeItem{Utilized openCV and Tensorflow to create machine learning models}
+            \resumeItemListEnd
+        \resumeProjectHeading
+        {\textbf{Java Jackpot Fox Den Casino}}{May 2024}
+        \resumeItemListStart
+            \resumeItem{Created Casino Game for Data Structures and Algorithms Class with features of Baccarat, Persistent Scoreboard, and HTML Client utilizing Random.org API for true-random Casino mechanics. }
+                \resumeItem{Utilized Java and Swing to make the application from scratch doing both front-end and back-end development}
+                \resumeItem{Utilized Maven for package management and hosted source code on Github \href{https://github.com/adhi-thirumala/FCDataStructuresAlgorithmsCasino}{\textcolor{blue}{here}}}
+                \resumeItem{Presented project in front of district administration as part of in-classroom enrichment opportunity}
+            \resumeItemListEnd
     \resumeSubHeadingListEnd
+% -------------------- WORK --------------------
+\section{Work Experience}
+  \resumeSubHeadingListStart
 
+        \resumeProjectHeading
+          {\textbf{Kumon Fox Chapel} $|$ \footnotesize\emph{Assistant for Center Operation}\vspace{8pt}}{2021 - 2024}
+          {\small{Successfully improved the self-initiated learning abilities of students (Pre K-9) in language arts \& math
+(arithmetic-calculus). Graded students' daily work and tutored students through concepts.
+Entered student homework data into online computer system. Coordinated work with other employees to maximise efficiency in center.}}
+\resumeSubHeadingListEnd
 % -------------------- EXPERIENCE --------------------
 \section{Extracurricular Activities}
   \resumeSubHeadingListStart
 
         \resumeProjectHeading
-          {\textbf{Forensics and Model UN Club} $|$ \footnotesize\emph{'22-'23: Director of Debate, '23-Present: President }\vspace{8pt}}{2020 - Present}
-          {\small{Intensively researched and debated on the national circuit. Coached and taught novice students who qualified for state championships. To improve performance in tournaments conducted after school practice sessions. Judged local novice tournaments. Created club-branded merchandise. Spearheaded fundraising efforts for competition travel.}}
+          {\textbf{Forensics and Model UN Club} $|$ \footnotesize\emph{'22-'23: Director of Debate, '23-'24: President }\vspace{8pt}}{2020 - Present}
+          {\small{Intensively researched and debated on the national circuit without support from school-led program. Coached and taught novice students who qualified for state championships. Conducted after school practice sessions to improve performance in tournaments. Judged local novice tournaments. Created club-branded merchandise. Spearheaded fundraising efforts for competition travel.}}
 
    
         \resumeProjectHeading
-          {\textbf{Science Fair Club} $|$ \footnotesize\emph{'22-Present: President}\vspace{8pt}}{2017 - Present}
+          {\textbf{Science Fair Club} $|$ \footnotesize\emph{'22-'24: President}\vspace{8pt}}{2017 - Present}
           {\small{Promoted science fair opportunities throughout the high school, increased state participation in PJAS by 20\%. Mentored younger students and taught presentation skills. Volunteered at an elementary school science fair to teach science concepts  through basic demonstrations and to judge projects. }}
 
         \resumeProjectHeading
@@ -216,7 +224,7 @@ Entered student homework data into online computer system. Coordinated work with
 
         \resumeProjectHeading
           {\textbf{Asian Cultural Club}\vspace{8pt} $|$ \footnotesize\emph{Member}}{2021 - Present}
-          {\small{Promoted cultural awareness through weekly club meetings and Asian food/drink sales to high school students and teachers. Performed in a community dance showcase featuring cultures from around the world. Raised Funds through club events to support future club activities}}
+          {\small{Promoted cultural awareness through weekly club meetings and Asian food/drink sales to high school students and teachers. Performed in a community dance showcase featuring cultures from around the world. Raised funds through club events to support future club activities. Edited and managed newsletter about Asian and Asian-American culture that was distributed school-wide.}}
          
     \resumeSubHeadingListEnd 
 % -------------------- Volunteer --------------------
@@ -226,7 +234,7 @@ Entered student homework data into online computer system. Coordinated work with
           {\textbf{Mini Golf Fundraiser} $|$ \footnotesize\emph{Founder, Leader of Fundraising Activities}\vspace{8pt}}{2021 - Present}
           {\small{2021: Organized a Mini Golf fundraiser for Indian CoVID relief. Raised \$2500, which was donated to EKAM ® Foundation  for purchase of oxygen, and infant warmers given to primary health centers in South India.
 
-2022: Organized a Mini Golf fundraiser for Bethlehem Haven, a local women’s shelter, whose mission is to provide a continuum of care for homeless women that leads toward self-sufficiency. Raised \$2000, towards the purchase of an Automated External Defibrillator, it can be used to help those experiencing sudden cardiac arrest. 
+2022: Organized a Mini Golf fundraiser for Bethlehem Haven, a local women’s shelter, whose mission is to provide a continuum of care for homeless women that leads toward self-sufficiency. Raised \$2000, towards the purchase of an Automated External Defibrillator which can be used to help those experiencing sudden cardiac arrest. 
 
 2023: Organized a  Mini Golf fundraiser, with Moonyoung Hwang, for Bethlehem Haven. Raised \$2000 for the renovation of their main residence, funds will be used for furnishing a room for homeless women to stay during their path to self-sufficiency. 
 
@@ -261,11 +269,11 @@ local flora and fauna. Volunteered at nature shop, assisted as cashier and in da
 \resumeProjectHeading
           {\textbf{University of Michigan Debate Institute Seven Week Program}\vspace{8pt}}{2023}
           {\small{ Seven week summer workshop for Top Senior National Debaters. 
-Significantly improved research skills, strategic vision \& speaking ability through intensive lectures, classes \& practice debates on the topic “The United States federal government should substantially increase fiscal redistribution in the United States by adopting a federal jobs guarantee, expanding Social Security, and/or providing a basic income.”}}
+Significantly improved research skills, strategic vision \& speaking ability through intensive lectures, classes \& practice debates on the topic: \textit{The United States federal government should substantially increase fiscal redistribution in the United States by adopting a federal jobs guarantee, expanding Social Security, and/or providing a basic income.}}}
  \resumeProjectHeading
           {\textbf{University of Michigan Debate Institute Classic Plus Program}\vspace{8pt}}{2022}
           {\small{Four week summer workshop. 
-Significantly improved research skills, strategic vision \& speaking ability through intensive lectures, classes \& practice debates on the topic “The United States federal government should substantially increase its security cooperation with the North Atlantic Treaty Organization in one or more of the following areas: artificial intelligence, biotechnology, cybersecurity.”}}
+Significantly improved research skills, strategic vision \& speaking ability through intensive lectures, classes \& practice debates on the topic: \textit{The United States federal government should substantially increase its security cooperation with the North Atlantic Treaty Organization in one or more of the following areas: artificial intelligence, biotechnology, cybersecurity.}}}
 \resumeSubHeadingListEnd
 \section{Debate Awards}
    \resumeSubHeadingListStart
@@ -279,10 +287,10 @@ Significantly improved research skills, strategic vision \& speaking ability thr
         \resumeProjectHeading
         {\textbf{National Catholic Forensics League Grand Nationals Double-Octafinalist (Top 32)}}{2022}
         \resumeProjectHeading
-        {\textbf{PA State Champion Policy Debate}}{2023}
+        {\textbf{PA State Champion Policy Debate}}{2023, 2024}
         \resumeProjectHeading
         {\textbf{PA State Quarterfinalist Policy Debate}}{2022}
-     
+        
 
     \resumeSubHeadingListEnd
 \section{Volunteer Awards}
