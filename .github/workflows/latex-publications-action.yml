@@ -11,9 +11,10 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: main.tex
-      - run: mv main.pdf adhi_thirumala_resume.pdf
+      - name: rename resume pdf file 
+        run: mv main.pdf adhi_thirumala_resume.pdf
       - name: commit compiled file to resume repo
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          file-pattern: '*.pdf'
+          file_pattern: '*.pdf'
           commit_message: github actions runner compiled pdf and updated resume
