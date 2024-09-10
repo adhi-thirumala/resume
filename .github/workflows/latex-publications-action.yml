@@ -1,5 +1,5 @@
 name: Build LaTeX document and push to this repo as well as website
-run-name:  ${{date}} resume update
+run-name:  resume update
 on: [push]
 jobs:
   build_latex:
