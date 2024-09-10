@@ -1,5 +1,5 @@
 name: Build LaTeX document and push to this repo as well as website
-run-name: ${date +%Y%m%d%H%M} resume update
+run-name: ${{github.event.repository.updated_at}} resume update by ${{github.actor}}
 on: [push]
 jobs:
   build_latex:
@@ -11,8 +11,8 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: main.tex
-      - name: Upload PDF file
-        uses: actions/upload-artifact@v4
-        with:
-          name: PDF
-          path: main.pdf
+      - run: mv main.pdf adhi_thirumala_resume.pdf
+      - name: commit compiled file to resume repo
+      uses: stefanzweifel/git-auto-commit-action@v5
+      file-pattern: '*.pdf'
+      commit_message: github actions runner compiled pdf and updated resume
