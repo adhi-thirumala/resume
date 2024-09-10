@@ -1,6 +1,9 @@
 name: Build LaTeX document and push to this repo as well as website
 run-name: ${{github.event.repository.updated_at}} resume update by ${{github.actor}}
-on: [push]
+on:
+  push:
+    branches:
+      main
 jobs:
   build_latex:
     runs-on: ubuntu-latest
