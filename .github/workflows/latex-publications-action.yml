@@ -11,10 +11,22 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: main.tex
-      - name: rename resume pdf file 
-        run: mv main.pdf adhi_thirumala_resume.pdf
+      - name: rename resume pdf file and move to directory
+        run: mkdir target
+        run: cp main.pdf target/adhi_thirumala_resume.pdf
       - name: commit compiled file to resume repo
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           file_pattern: '*.pdf'
           commit_message: github actions runner compiled pdf and updated resume
+      - name: commit to folder in website repo
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          SSH_DEPLOY_KEY: ${{secrets.SSH_DEPLOY_KEY}}
+        with:
+          source-directory: ./target
+          destination-github-username: adhi-thirumala
+          destination-repository-name: adhi-thirumala.github.io
+          user-email: adhi.thirumala@gmail.com
+          commit-message: "added compiled resume through github actions on resume repo"
+          target-directory: assets/pdf/
