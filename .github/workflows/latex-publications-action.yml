@@ -12,11 +12,11 @@ jobs:
         with:
           root_file: main.tex
       - name: Rename resume pdf file and move to directory
-        run: mkdir target | cp main.pdf target/adhi_thirumala_resume.pdf
+        run: mkdir target | mv main.pdf target/adhi_thirumala_resume.pdf
       - name: Commit compiled file to resume repo
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          file_pattern: '*.pdf'
+          file_pattern: 'target/*.pdf'
           commit_message: github actions runner compiled pdf and updated resume
       - name: Commit to folder in website repo
         uses: cpina/github-action-push-to-another-repository@main
