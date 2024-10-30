@@ -6,7 +6,7 @@
 %------------------------
 
 \documentclass{article}
-\usepackage[paperwidth=8.5in,paperheight=11in,margin=0.25in]{geometry}
+\usepackage[paperwidth=8.5in,paperheight=11in,margin=0.125in]{geometry}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -130,7 +130,7 @@
 \section{Education}
 \resumeSubHeadingListStart
 
-\resumeSubheading{University of Illinois Urbana-Champaign} {2024-Present} {Major: Computer Science + Linguistics}{}
+\resumeSubheading{University of Illinois Urbana-Champaign} {2024-Present} {Major: Computer Science + Linguistics}{GPA: 4.0/4.0}
 \resumeSubheading
 {Fox Chapel Area High School}{2020-2024}
 {}{GPA: 4.32/4.0 (Top 10\%), SAT: 1550 (790 Math, 760 EBRW)}
@@ -156,7 +156,7 @@
 \begin{itemize}[leftmargin=0.15in, label={}]
 	\small{\item{
 
-		            \textbf{Languages:}{ Python, Java, HTML, Bash, \LaTeX, YAML, TOML, SQL} \\
+		            \textbf{Languages:}{ Python, Java, HTML, Bash, \LaTeX, YAML, TOML, SQL, Go, C} \\
 
 		            \textbf{Tools:}{ Git/GitHub, Github Actions, Vim, Huggingface, Linux, Maven, Gradle. SQlite}\\
 		            % \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
@@ -170,7 +170,14 @@
 % -------------------- PROJECTS --------------------
 \section{Projects}
 \resumeSubHeadingListStart
-
+\resumeProjectHeading
+{\textbf{matched.lol - In Progress} $|$ {\small\footnotesize\emph{Java, Go, SQLite}}}{September 2024 - Present}
+\resumeItemListStart
+\resumeItem{Lead backend developer for web/mobile application to match League of Legends players based on preference}
+\resumeItem{Developed a RESTful API using Spring Boot and Go to handle user requests}
+\resumeItem{Utilized SQLite to store user data and preferences}
+\resumeItem{Implemented OAuth2.0 for user authentication with Discord and Riot Games}
+\resumeItemListEnd
 \resumeProjectHeading
 {\textbf{Clickbait Classification and Spoiling Using NLP \href{https://doi.org/10.48550/arXiv.2306.14907}{\textcolor{blue}{(arXiv)}}} $|$ {\small\footnotesize\emph{Python, Torch}}}{Oct 2022 - May 2023}
 \resumeItemListStart
@@ -183,9 +190,8 @@
 {\textbf{Extractive Question Answering on Queries in Hindi and Tamil \href{https://doi.org/10.48550/arXiv.2210.06356}{\textcolor{blue}{(arXiv)}}} $|$ \footnotesize\emph{Python, Torch}}{Oct 2021 - May 2022}
 \resumeItemListStart
 \resumeItem{Developed Extractive Question Answering (QA) models in Tamil and Hindi with public dataset}
-\resumeItem{Improved performance of such models as compared to gold-standard}
+\resumeItem{Improved performance of such models as compared to gold-standard by over 20\% in both Hindi and Tamil}
 \resumeItem{Modified RoBERTa tokenizer to accept input in Hindi and Tamil to minimize need for data and training}
-
 \resumeItem{Received 26th Annual Senior Division Carnegie Science Award presented at annual Gala to fundraise for Carnegie Science Center and to honor Pittsburgh's scientists and researchers}
 \resumeItem{Mentored by Dr. Elisa Ferracane}
 \resumeItemListEnd
@@ -203,27 +209,19 @@
 \section{Work Experience}
 \resumeSubHeadingListStart
 \resumeProjectHeading
-{\textbf{Private Debate Coaching}}{2024 - Present}
+{\textbf{Private Debate Coaching} $|$ \footnotesize\emph{Freelance}}{2024 - Present}
 \resumeItemListStart
-\resumeItem{Conducted 4 hours of research weekly for national circuit debate competitors from Whitney M. Young Magnet High School, Gunn Senior High School, and Edison College Preparatory High School.}
+\resumeItem{Conducted 4-6 hours of research weekly for national circuit debate competitors from Whitney M. Young Magnet High School, Gunn Senior High School, and Edison College Preparatory High School.}
 \resumeItem{Met to teach important debate skills and review past tournament performance twice a week}
 \resumeItem{Coached five teams to first-time elimation round finishes and consistent national circuit tournament placements}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
-\resumeSubHeadingListStart
-\resumeProjectHeading
-{\textbf{Kumon} $|$ \footnotesize\emph{Assistant for Center Operation - Fox Chapel Center}}{2021 - 2024}
-\resumeItemListStart
-\resumeItem{Successfully improved the self-initiated learning abilities of over 200 students (Pre K-9) in English \& math
-	(arithmetic-calculus)}
-\resumeItem{Graded students' daily work and tutored students through concepts.}
-\resumeItemListEnd
-\resumeSubHeadingListEnd
+
 \vspace{-10pt}
 \section{Activities}
 \begin{itemize}[leftmargin=0.15in, label={}]
 	\small{\item{
-		            \textbf{Clubs: }{Association for Computing Machinery, GNU/Linux User Group, Illini Global Forensics Speech and Debate, SIGNLL (ACM NLP Special Interest Group)}\\
+		            \textbf{Clubs: }{Association for Computing Machinery, GNU/Linux User Group, Illini Speech and Debate, SIGNLL (ACM NLP Special Interest Group)}\\
 
 		      }}
 \end{itemize}
@@ -244,7 +242,15 @@
 \begin{comment}
 \section{High School Awards}
 \resumeSubHeadingListStart
-
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Kumon} $|$ \footnotesize\emph{Assistant for Center Operation - Fox Chapel Center}}{2021 - 2024}
+\resumeItemListStart
+\resumeItem{Successfully improved the self-initiated learning abilities of over 200 students (Pre K-9) in English \& math
+	(arithmetic-calculus)}
+\resumeItem{Graded students' daily work and tutored students through concepts.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
 \resumeProjectHeading
 {\textbf{Pennsylvania Junior Academy of Science Regional and State First Place}}{2021 - 2023}
 
