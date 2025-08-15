@@ -4,7 +4,6 @@
 % Based on: https://github.com/jakegut/resume (which was based on https://github.com/sb2nov/resume)
 % License : MIT
 %------------------
-
 \documentclass{article}
 \usepackage[paperwidth=8.5in,paperheight=11in,margin=0.125in]{geometry}
 \usepackage{latexsym}
@@ -20,7 +19,7 @@
 \usepackage{tabularx}
 \usepackage{xcolor}
 \usepackage{fontawesome5}
-
+\usepackage{orcidlink}
 \input{glyphtounicode}
 
 % -------------------- FONT --------------------
@@ -102,8 +101,6 @@
 \begin{flushright}
 	\vspace{-4pt}
 	\color{gray}
-	\item
-	Last Updated \today
 \end{flushright}
 
 \vspace{-7pt}
@@ -112,16 +109,19 @@
 	\textbf{{\Huge\scshape Adhitya Thirumala}} \\ \vspace{8pt}
 	\small
 	\faIcon{github}
-	\href{https://github.com/adhi-thirumala}{\underline{https://github.com/adhi-thirumala}} $  $
+	\href{https://github.com/adhi-thirumala}{\underline{adhi-thirumala}} $  $
 	\faIcon{linkedin}
-	\href{www.linkedin.com/in/adhitya-thirumala}
-	{\underline{linkedin.com/in/adhitya-thirumala}} $  $
+	\href{https://www.linkedin.com/in/adhitya-thirumala}
+	{\underline{adhitya-thirumala}} $  $
 	\faIcon{envelope}
 	\href{mailto:adhit2@illinois.edu}
 	{\underline{adhit2@illinois.edu}}
 	\faIcon{code}
 	\href{https://www.adhithirumala.com}
 	{\underline{adhithirumala.com}} $  $
+  % space after orcid
+  \orcidlinkc{0009-0003-6634-7066} $  $
+
 
 
 \end{center}
@@ -130,71 +130,39 @@
 \section{Education}
 \resumeSubHeadingListStart
 
-\resumeSubheading{University of Illinois Urbana-Champaign} {Graduation: 2027} {Major: Computer Science + Linguistics}{}
+\resumeSubheading{University of Illinois Urbana-Champaign} {Current | May 2027} {Major: Computer Science + Linguistics | Minor: Mathematics}{GPA: 3.82}
+\vspace{1pt}
 
 \resumeSubheading
 {Fox Chapel Area High School}{}
 {}{}
 \resumeSubHeadingListEnd
 \vspace{-15pt}
-\section{Relevant Coursework}
-\begin{itemize}[leftmargin=0.15in, label={}]
-	\small{\item{
-		           {\textbf{Computer Science:} CS 374: Algorithms and Models of Computation, CS 225: Introduction to Data Structures and Algorithms with C++, CS 233: Computer Architecture, CS 124/128: Introduction to Computer Science I and II \\
-               \textbf{Mathematics and Statistics:} Math 416H: Honors Abstract Linear Algebra, STAT 400: Statistics and Probability I, MATH 241: Multivariable Calculus, CS 173: Discrete Structures, MATH 314: Introduction to Higher Level Math}\\
-
-		      }}
-\end{itemize}
-% \textbf{AP Classes:} AP Computer Science Principles(5), AP Computer Science A(5), AP World History(5), AP US History(5), AP Calculus AB(5), AP Calculus BC(5), AP Chemistry, AP Physics C: Electricity and Magnetism(5), AP English Language and Composition(4), AP Statistics, AP Physics C: Mechanics (4), AP US Government and Politics (5), AP English Literature and Composition \\
-%  \textbf{Academic Awards:}
-%AP Scholar with Distinction (2023), National Merit Qualifying Test Finalist (2023)
-
-\vspace{-10pt}
-
-
-% -------------------- SKILLS --------------------
-\section{Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
-	\small{\item{
-
-		            \textbf{Languages:}{ Python, Java, HTML, Bash, \LaTeX, SQL, Go, C, C++, Lua, Javascript, Typescript, CSS, Rust} \\
-
-		            \textbf{Tools:}{ Git/GitHub, Github Actions, Vim, Huggingface, Linux, Maven, Gradle, SQlite, Docker, PostgreSQL, Vercel, AWS, Oracle Cloud}\\
-		            % \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
-		            \textbf{Libraries:}{ pandas, NumPy, Matplotlib, Tensorflow, pyTorch, Sci-Kit Learn, Swing (Java), Spring (Java), Next.JS, React, Flask, LangChain, LangGraph}
-
-		      }}
-\end{itemize}
-\vspace{-10pt}
 
 
 % -------------------- PROJECTS --------------------
 \section{Experience}
 \resumeSubHeadingListStart
 \resumeProjectHeading
-{\textbf{Machine Learning Intern} $|$ {\footnotesize\emph{Digital Main}}}{May 2025 - August 2025}
+{\textbf{Digital Main} $|$ {\footnotesize\emph{Machine Learning Intern}}}{May 2025 | August 2025}
 \resumeItemListStart
-\resumeItem{Built an asynchronous multi-agent research automation system in Python, orchestrating complex query decomposition and parallel web research using LangGraph and Gemini LLMs}
-\resumeItem{Implemented robust rate limiting, error handling, and automated source validation, integrating Tavily search and PDF extraction for high-quality information retrieval}
-\resumeItem{Automated generation of professional research briefs, including Markdown-to-PDF conversion, dynamic chart/table creation, and inline citation management}
-\resumeItem{Developed a modular, extensible architecture supporting deep-dive research, data visualization, and interactive command-line workflows}
+\resumeItem{Built an asynchronous multi-agent research automation system in Python, orchestrating complex query decomposition and parallel web research using LangGraph and Gemini LLM}
+\resumeItem{Utilized FastAPI to create customer-facing production backend API to stream research process to web frontend using Server Sent Events (SSE)}
+\resumeItem{Implemented automated agentic source validation, while integrating images and generating charts or tables into final artifact}
+\resumeItemListEnd
+\resumeProjectHeading {\textbf{Assocation for Computing Machinery at Illinois} $|$ {\footnotesize\emph{Treasurer}}}{March 2025 | Present}
+\resumeItemListStart
+\resumeItem{Managed over \$350k of organizational funds for largest CS student organization at Illinois with 26 internal committees and special interest groups comprising of over 1k total members}
+\resumeItem{Migrated accounting and credit card platforms from BILL.com to Ramp to obtain credit limit increase of 800\% and to streamline reimbursements, onboarding (using Single Sign On via Microsoft Entra ID), and reporting workflows, saving over 4+ hours per month} 
+\resumeItem{Served as liaison between organization and Siebel School of Computer Science staff to coordinate usage of department-provisioned funds for ACM events such as biannual open house (500+ attendees) and various social events}
 \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{Treasurer} $|$ {\footnotesize\emph{Association for Computing Machinery at Illinois}}}{2025 - Present}
+{\textbf{Freelance} $|$ {\footnotesize\emph{Private Policy Debate Coach}}}{August 2024 | Present}
 \resumeItemListStart
-\resumeItem{Managed over \$350k of funds and financial records for largest student organization at Illinois}
-\resumeItem{Migrated accounting and credit card platforms from BILL.com to Ramp to streamline reimbursements workflow and reporting while successfully obtaining a credit limit increase of 800\%} 
-\resumeItem{Served as liaison between organization and CS department staff at Illinois to coordinate usage of department-provisioned funds for ACM events and activities}
-\resumeItemListEnd
-
-\resumeProjectHeading
-{\textbf{Debate Coach} $|$ {\footnotesize\emph{Freelance}}}{2024 - Present}
-\resumeItemListStart
-\resumeItem{Conducted 4-6 hours of research weekly for national circuit debate competitors from Whitney M. Young Magnet High School, Gunn Senior High School, Unionville High School, and Edison College Preparatory High School.}
-\resumeItem{Met to teach important debate skills and review past tournament performance twice a week}
-\resumeItem{Judged debates at tournaments for 20+ hours per month both in-person and online}
-\resumeItem{Coached six teams to first-time elimation round finishes and championed round robin invitational tournament at the University of Michigan}
+\resumeItem{Mentored nine students from academic institutions nationwide, identified through extensive high school competitive debate networking, providing strategic coaching and performance enhancement}
+\resumeItem{Considered past performances at over 100+ rounds to use data-driven strategies to increase student winrate by over 120\%}
+\resumeItem{Coached student to tournament victory at University of Michigan Round Robin Invitational, successfully competing solo against established partnerships in premier national circuit event}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -203,29 +171,59 @@
 \section{Research}
 \resumeSubHeadingListStart
 \resumeProjectHeading
-{\textbf{Clickbait Classification \href{https://doi.org/10.48550/arXiv.2306.14907}{\textcolor{blue}{(arXiv)}}} $|$ {\small\footnotesize\emph{Python, Torch}}}{Oct 2022 - May 2023}
+{\textbf{Clickbait Classification \href{https://doi.org/10.48550/arXiv.2306.14907}{\textcolor{blue}{(arXiv)}}}} {Oct 2022 | May 2023}
 \resumeItemListStart
-\resumeItem{Developed NLP models to classify and spoil clickbait using LLMs and other transformer-based models, submitted to SemEval 2023}
+\resumeItem{Developed NLP models to classify and spoil clickbait using LLMs and SLM transformer-based models}
+\resumeItem{Results submitted to \textit{The 17th International Workshop on Semantic Evaluation}: Toronto, Canada 2023}
 \resumeItem{Mentored by Dr. Elisa Ferracane}
 \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{Extractive QA in Hindi and Tamil \href{https://doi.org/10.48550/arXiv.2210.06356}{\textcolor{blue}{(arXiv)}}} $|$ \footnotesize\emph{Python, Torch}}{Oct 2021 - May 2022}
+{\textbf{Extractive QA in Hindi and Tamil \href{https://doi.org/10.48550/arXiv.2210.06356}{\textcolor{blue}{(arXiv)}}}}{Oct 2021 | May 2022}
 \resumeItemListStart
 \resumeItem{Built QA models improving performance by 20\% over baseline in Hindi and Tamil due to modified RoBERTa tokenizer}
-\resumeItem{Received Carnegie Science Award for research contributions in multilingual NLP}
+\resumeItem{Received 26th Annual Carnegie Science Award given to 12 top scientists, entrepreneurs, innovators and educators across the city of Pittsburgh}
 \resumeItem{Mentored by Dr. Elisa Ferracane}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
+\vspace{-10pt}
 % -------------------- WORK --------------------
+% -------------------- SKILLS --------------------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+	\small{\item{
+
+		            \textbf{Languages:}{ C++, Rust, C, Python, Java, HTML, Bash, \LaTeX, SQL, Go, Lua, Javascript, Typescript, CSS} \\
+                \textbf{Tools:}{ Linux, Git, GitHub, Github Actions, Vim, Huggingface, Maven, Gradle, SQlite, Docker, PostgreSQL, Vercel, Amazon Web Services (AWS), Oracle Cloud, Google Cloud Platform}\\
+		            % \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+		            \textbf{Libraries:}{ pandas, NumPy, Matplotlib, Tensorflow, pyTorch, Sci-Kit Learn, Swing (Java), Spring (Java), Next.JS, React, Flask, LangChain, LangGraph, FastAPI}
+
+		      }}
+\end{itemize}
+\vspace{-10pt}
+
+
+
+\section{Relevant Coursework}
+\begin{itemize}[leftmargin=0.15in, label={}]
+	\small{\item{
+		           {\textbf{Computer Science:} CS 374: Algorithms and Models of Computation, CS 225: Data Structures, CS 233: Computer Architecture, CS 124/128: Introduction to Computer Science I and II \\
+               \textbf{Mathematics and Statistics:} Math 416H: Honors Abstract Linear Algebra, STAT 400: Statistics and Probability I, MATH 314: Introduction to Higher Level Math, MATH 241: Multivariable Calculus, CS 173: Discrete Structures}\\
+		      }}
+\end{itemize}
+% \textbf{AP Classes:} AP Computer Science Principles(5), AP Computer Science A(5), AP World History(5), AP US History(5), AP Calculus AB(5), AP Calculus BC(5), AP Chemistry, AP Physics C: Electricity and Magnetism(5), AP English Language and Composition(4), AP Statistics, AP Physics C: Mechanics (4), AP US Government and Politics (5), AP English Literature and Composition \\
+%  \textbf{Academic Awards:}
+%AP Scholar with Distinction (2023), National Merit Qualifying Test Finalist (2023)
+
+
 
 \vspace{-10pt}
 \section{Activities}
 \begin{itemize}[leftmargin=0.15in, label={}]
 	\small{\item{
-      \textbf{Clubs: }{Association for Computing Machinery}\\
+      \textbf{Clubs: }{Association for Computing Machinery at Illinois, GNU/Linux User Group}\\
 
 		      }}
 \end{itemize}
