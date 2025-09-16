@@ -5,7 +5,7 @@
 % License : MIT
 %------------------
 \documentclass{article}
-\usepackage[paperwidth=8.5in,paperheight=11in,margin=0.125in]{geometry}
+\usepackage[paperwidth=8.5in,paperheight=11in,margin=0.0625in]{geometry}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -30,11 +30,12 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\evensidemargin}{-0.75in}
+\addtolength{\textwidth}{1.5in}
 \addtolength{\topmargin}{-1in} % Default was -.5in
-\addtolength{\textheight}{1.0in}
+\addtolength{\textheight}{1.5in}
+\addtolength{\footskip}{-0.5in}
 
 \urlstyle{same}
 
@@ -130,14 +131,10 @@
 \section{Education}
 \resumeSubHeadingListStart
 
-\resumeSubheading{University of Illinois Urbana-Champaign} {Current | May 2027} {Major: Computer Science + Linguistics | Minor: Mathematics}{GPA: 3.82}
-\vspace{1pt}
+\resumeSubheading{University of Illinois Urbana-Champaign} {Expected Graduation: May 2027} {Major: Computer Science + Linguistics | Minor: Mathematics}{GPA: 3.82}
 
-\resumeSubheading
-{Fox Chapel Area High School}{}
-{}{}
 \resumeSubHeadingListEnd
-\vspace{-15pt}
+\vspace{-7.5pt}
 
 
 % -------------------- PROJECTS --------------------
@@ -146,71 +143,94 @@
 \resumeProjectHeading
 {\textbf{Digital Main} $|$ {\footnotesize\emph{Machine Learning Intern}}}{May 2025 | August 2025}
 \resumeItemListStart
-\resumeItem{Built an asynchronous multi-agent research automation system in Python, orchestrating complex query decomposition and parallel web research using LangGraph and Gemini LLM}
-\resumeItem{Utilized FastAPI to create customer-facing production backend API to stream research process to web frontend using Server Sent Events (SSE)}
+\resumeItem{Built an asynchronous agentic retrieval-augmented-generation (RAG) system in Python, orchestrating query decomposition and research across web and internal client data (Slack messages, emails, etc.) using LangGraph}
+\resumeItem{Utilized FastAPI to create customer-facing production API to stream research process to web client using Server Sent Events (SSE)}
 \resumeItem{Implemented automated agentic source validation, while integrating images and generating charts or tables into final artifact}
 \resumeItemListEnd
 \resumeProjectHeading {\textbf{Assocation for Computing Machinery at Illinois} $|$ {\footnotesize\emph{Treasurer}}}{March 2025 | Present}
 \resumeItemListStart
-\resumeItem{Managed over \$350k of organizational funds for largest CS student organization at Illinois with 26 internal committees and special interest groups comprising of over 1k total members}
-\resumeItem{Migrated accounting and credit card platforms from BILL.com to Ramp to obtain credit limit increase of 800\% and to streamline reimbursements, onboarding (using Single Sign On via Microsoft Entra ID), and reporting workflows, saving over 4+ hours per month} 
-\resumeItem{Served as liaison between organization and Siebel School of Computer Science staff to coordinate usage of department-provisioned funds for ACM events such as biannual open house (500+ attendees) and various social events}
+\resumeItem{Managed over \textbf{\$350k} of organizational funds for largest CS student organization at Illinois with \textbf{1000+} total members}
+\resumeItem{Migrated accounting and credit card platforms from BILL.com to Ramp to obtain credit limit increase of \textbf{2300\%} and to streamline reimbursements, onboarding, and reporting workflows} 
+\resumeItem{Served as liaison between organization and Siebel School of Computer Science staff to coordinate usage of department-provisioned funds for ACM events such as biannual open house \textbf{(500+ attendees)} and various social events}
 \resumeItemListEnd
 
 \resumeProjectHeading
 {\textbf{Freelance} $|$ {\footnotesize\emph{Private Policy Debate Coach}}}{August 2024 | Present}
 \resumeItemListStart
-\resumeItem{Mentored nine students from under-resourced institutions nationwide, identified through extensive high school competitive debate networking, providing strategic coaching and performance enhancement}
-\resumeItem{Considered past student performances at over 100+ rounds to use data-driven strategies to increase student winrate by over 120\%}
+\resumeItem{Mentored \textbf{9} students from under-resourced institutions nationwide, identified through extensive high school competitive debate networking, providing strategic coaching and performance enhancement}
+\resumeItem{Considered past student performances at over \textbf{100+} rounds to use data-driven strategies to increase student winrate by \textbf{120\%}}
 \resumeItem{Coached student to tournament victory at University of Michigan Round Robin Invitational, successfully competing solo against established partnerships in premier national circuit event}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 
-\vspace{-10pt}
+\vspace{-7.5pt}
 
-\section{Research}
+\section{Selected Publications}
 \resumeSubHeadingListStart
 \resumeProjectHeading
 {\textbf{Clickbait Classification and Spoiling Using Natural Language Processing \href{https://doi.org/10.48550/arXiv.2306.14907}{\textcolor{blue}{(arXiv)}}}} {Oct 2022 | May 2023}
 \resumeItemListStart
-\resumeItem{Developed NLP models to classify and spoil clickbait using LLMs and SLM transformer-based models}
-\resumeItem{Results submitted to \textit{The 17th International Workshop on Semantic Evaluation}: Toronto, Canada 2023}
-\resumeItem{Mentored by Dr. Elisa Ferracane}
+\resumeItem{Trained transformers-based models on shared task dataset for clickbait detection}
+\resumeItem{Performed comparative analysis between fine-tuned SLM BERT-based models and Large Language Models on clickbait spoiling task}
+\resumeItem{Utilized Weights and Biases hyperparameter tuning to achieve \textbf{$\sim$80\%} accuracy on shared task}
+\resumeItem{Results accepted by \textit{The 17th International Workshop on Semantic Evaluation}: Toronto, Canada 2023}
 \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{Extractive Question Answering on Queries in Hindi and Tamil \href{https://doi.org/10.48550/arXiv.2210.06356}{\textcolor{blue}{(arXiv)}}}}{Oct 2021 | May 2022}
+{\textbf{Extractive Question Answering(QA) on Queries in Hindi and Tamil \href{https://doi.org/10.48550/arXiv.2210.06356}{\textcolor{blue}{(arXiv)}}}}{Oct 2021 | May 2022}
 \resumeItemListStart
-\resumeItem{Built QA models improving performance by 20\% over baseline in Hindi and Tamil due to modified RoBERTa tokenizer}
-\resumeItem{Received 26th Annual Carnegie Science Award given to 12 top scientists, entrepreneurs, innovators and educators across the city of Pittsburgh}
-\resumeItem{Mentored by Dr. Elisa Ferracane}
+\resumeItem{Trained NLP models to perform extractive QA improving performance by \textbf{20\%} over baseline due to modified RoBERTa tokenizer}
+\resumeItem{Utilized crosslingual dataset provided by competing in online competition hosted by Google}
+\resumeItem{Received 26th Annual Carnegie Science Award given to \textbf{12} top scientists, entrepreneurs, innovators and educators across the city of Pittsburgh for submitted research}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
-\vspace{-10pt}
+\vspace{-7.5pt}
 % -------------------- WORK --------------------
+\section{Projects}
+% matched.lol
+% mcp pokemon
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{LLM Evaluation Framework for Competitive Pokemon} $|$ {\footnotesize\emph{Developer}}}{September 2025 | Current}
+\resumeItemListStart
+\resumeItem{Built Model Context Protocol (MCP) server using Typescript SDK to expose tools and resources for LLMs to play competitive Pokemon}
+\resumeItem{Created evaluation framework to rank LLMs with ELO system across many battles}
+\resumeItem{Integrated MCP server with existing online battle software and data provider by creating library to parse requests and responses to battle software}
+\resumeItemListEnd
+
+
+\resumeProjectHeading
+{\textbf{matched.lol} $|$ {\footnotesize\emph{Backend Developer}}}{September 2024 | December 2024}
+\resumeItemListStart
+\resumeItem{Developed a Java Spring Boot REST API with PostgreSQL database for a platform to pair League of Legends players, implementing Discord OAuth2 authentication and preference-based matching algorithms}
+\resumeItem{Built comprehensive database layer with complex SQL queries for user filtering and relationship management using serverless PostgreSQL platform (Neon)}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-7.5pt}
 % -------------------- SKILLS --------------------
 \section{Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
 	\small{\item{
 
-		            \textbf{Languages:}{ C++, Rust, C, Python, Java, HTML, Bash, \LaTeX, SQL, Go, Lua, Javascript, Typescript, CSS} \\
-                \textbf{Tools:}{ Linux, Git, GitHub, Github Actions, Vim, Huggingface, Maven, Gradle, SQlite, Docker, PostgreSQL, Vercel, Amazon Web Services (AWS), Oracle Cloud, Google Cloud Platform, CMake}\\
+		            \textbf{Languages:}{ C++, Rust, C, Python, Java, HTML, Bash, \LaTeX, SQL, Go, Lua, Javascript, Typescript, CSS } \\
+                \textbf{Tools:}{ Linux, Git, Vim, Huggingface, Maven, Gradle, SQLite, Docker, PostgreSQL, Vercel, AWS, Oracle Cloud, Google Cloud Platform}\\
 		            % \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
-		            \textbf{Libraries:}{ pandas, NumPy, Matplotlib, Tensorflow, pyTorch, Sci-Kit Learn, Swing (Java), Spring (Java), Next.JS, React, Flask, LangChain, LangGraph, FastAPI}
+		            \textbf{Libraries:}{ pandas, NumPy, Matplotlib, Tensorflow, pyTorch, Sci-Kit Learn, Swing (Java), Spring (Java), Next.JS, React.JS, Flask, LangChain, LangGraph, FastAPI}
 
 		      }}
 \end{itemize}
-\vspace{-10pt}
-
+\vspace{-7.5pt}
 
 
 \section{Relevant Coursework}
 \begin{itemize}[leftmargin=0.15in, label={}]
 	\small{\item{
-		           {\textbf{Computer Science:} CS 374: Algorithms and Models of Computation, CS 225: Data Structures, CS 233: Computer Architecture, CS 124/128: Introduction to Computer Science I and II \\
-               \textbf{Mathematics and Statistics:} Math 416H: Honors Abstract Linear Algebra, STAT 400: Statistics and Probability I, MATH 314: Introduction to Higher Level Math, MATH 241: Multivariable Calculus, CS 173: Discrete Structures}\\
+		           {\textbf{Computer Science:} Algorithms and Models of Computation, Data Structures in C++, Computer Architecture, Computational Linguistics \\
+               \textbf{Mathematics and Statistics:} Honors Abstract Linear Algebra, Statistics and Probability I, Introduction to Higher Level Math, Multivariable Calculus, Discrete Structures}\\
 		      }}
 \end{itemize}
 % \textbf{AP Classes:} AP Computer Science Principles(5), AP Computer Science A(5), AP World History(5), AP US History(5), AP Calculus AB(5), AP Calculus BC(5), AP Chemistry, AP Physics C: Electricity and Magnetism(5), AP English Language and Composition(4), AP Statistics, AP Physics C: Mechanics (4), AP US Government and Politics (5), AP English Literature and Composition \\
@@ -218,7 +238,7 @@
 %AP Scholar with Distinction (2023), National Merit Qualifying Test Finalist (2023)
 
 
-
+\begin{comment}
 \vspace{-10pt}
 \section{Activities}
 \begin{itemize}[leftmargin=0.15in, label={}]
