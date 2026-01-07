@@ -29,6 +29,6 @@ jobs:
           source-directory: ./target
           destination-github-username: adhi-thirumala
           destination-repository-name: website
-          user-email: adhi.thirumala@gmail.com
+          user-email: me@adhithirumala.com
           commit-message: "added compiled resume through github actions on resume repo"
           target-directory: static/pdf
