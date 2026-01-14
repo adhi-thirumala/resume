@@ -180,7 +180,7 @@
   date: "November 2025 | Current",
 )
 - Built a real-time Minecraft-Discord player status bridge using async Rust (Axum, Tokio frameworks) and Java Fabric mod enabling Discord communities to monitor online players
-- Engineered high-performance async architecture with lock-free concurrent caching and heap-free player-name storage, eliminating muxtex contention and heap allocation on high-throughput player events and decreasing disk read/write
+- Engineered high-performance async architecture with lock-free concurrent caching and heap-free player-name storage, eliminating mutex contention and heap allocation on high-throughput player events and decreasing disk read/write
 - Designed hybrid persistence layer combining SQLite for durability with in-memory caching for sub-millisecond queries across multiple tenants with multiple linked servers
 - Containerized and deployed to VPS on Oracle Cloud using Docker Compose to run in production
 
