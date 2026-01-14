@@ -177,7 +177,7 @@
 
 #resume-project-entry(
   title: [*#link("https://github.com/adhi-thirumala/oxeye")[#text(fill: blue)[Oxeye]]* | #text(size: 9pt)[_Developer_]],
-  date: "November 2025 | Current",
+  date: "November 2025 | Present",
 )
 - Built a real-time Minecraft-Discord player status bridge using async Rust (Axum, Tokio frameworks) and Java Fabric mod enabling Discord communities to monitor online players
 - Engineered high-performance async architecture with lock-free concurrent caching and heap-free player-name storage, eliminating mutex contention and heap allocation on high-throughput player events and decreasing disk read/write
