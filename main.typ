@@ -212,7 +212,7 @@
 
 #pad(left: 0.15in)[
   #set text(size: 9.5pt)
-  *Languages:* C++, Rust, C, Python, Java, HTML, Bash, LaTeX, SQL, Go, Lua, Javascript, Typescript, CSS, Verilog, MIPS Assembly \
+  *Languages:* C++, Rust, C, Python, Java, HTML, Bash, LaTeX, SQL, Go, Lua, JavaScript, Typescript, CSS, Verilog, MIPS Assembly \
   *Tools:* Linux, Git, Vim, Huggingface, Maven, Gradle, SQLite, Docker, Docker Compose, PostgreSQL, Vercel, AWS, Oracle Cloud, Google Cloud Platform, Cloudflare (Domain Management), Github Actions CI/CD, Ghidra \
   *Libraries:* pandas, NumPy, Matplotlib, Tensorflow, pyTorch, Sci-Kit Learn, Swing (Java), Spring (Java), Next.JS, React.js, Flask, LangChain, LangGraph, FastAPI, Axum, Tokio
 ]
