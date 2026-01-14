@@ -160,7 +160,7 @@
 #v(-5pt)
 
 #resume-project-entry(
-  title: [*Extractive Question Answering(QA) on Queries in Hindi and Tamil #link("https://doi.org/10.48550/arXiv.2210.06356")[#text(fill: blue)[(arXiv)]]*],
+  title: [*Extractive Question Answering (QA) on Queries in Hindi and Tamil #link("https://doi.org/10.48550/arXiv.2210.06356")[#text(fill: blue)[(arXiv)]]*],
   date: "Oct 2021 | May 2022",
 )
 - Trained NLP models to perform extractive QA improving performance by *20%* over baseline due to modified RoBERTa tokenizer
