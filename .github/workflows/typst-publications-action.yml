@@ -1,19 +1,19 @@
-name: Build LaTeX document and push to this repo as well as website
+name: Build Typst document and push to this repo as well as website
 run-name: ${{github.event.repository.updated_at}} resume update by ${{github.actor}}
 on:
   push:
     branches:
       main
 jobs:
-  build_latex:
+  build_typst:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v4
-      - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v3
-        with:
-          root_file: main.tex
+      - name: Setup Typst
+        uses: typst-community/setup-typst@v4
+      - name: Compile Typst document
+        run: typst compile main.typ main.pdf
       - name: Rename resume pdf file and move to directory
         run: mkdir target | mv main.pdf target/adhi_thirumala_resume.pdf
       - name: Commit compiled file to resume repo
