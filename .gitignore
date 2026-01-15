@@ -1,0 +1,22 @@
+# Ignore everything by default
+*
+
+# Include GitHub workflows
+!.github/
+!.github/**
+
+# Include typst files
+!*.typ
+
+# Include target folder and PDFs in it
+!target/
+!target/*.pdf
+
+# Include the resume
+!main.tex
+
+# Include this gitignore
+!.gitignore
+
+# Include README
+!README.md
