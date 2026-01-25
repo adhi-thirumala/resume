@@ -54,6 +54,7 @@
     - Implemented automated agentic source validation, while integrating images and generating charts or tables into final artifact
   ]
 
+  /*
   #work-heading(
     "Course Assistant",
     "University of Illinois Siebel School of Computer Science",
@@ -64,6 +65,7 @@
     - Selected to be an undergraduate course assistant for CS 225: Data Structures and Algorithms in C++
     - Assisted students in understanding and learning data structures (graphs, trees, linked lists) through office hours, online forums, and lab sections
   ]
+  */
 
   #work-heading(
     "Treasurer",
@@ -113,10 +115,16 @@
   #project-heading(
     [*#link("https://github.com/adhi-thirumala/oxeye")[#text(fill: blue)[Oxeye]]*],
   )[
-    - Built a real-time Minecraft-Discord player status bridge using async Rust (Axum, Tokio frameworks) and Java Fabric mod enabling Discord communities to monitor online players
-    - Engineered high-performance async architecture with lock-free concurrent caching and heap-free player-name storage, eliminating mutex contention and heap allocation on high-throughput player events and decreasing disk read/write
-    - Designed hybrid persistence layer combining SQLite for durability with in-memory caching for sub-millisecond queries across multiple tenants with multiple linked servers
-    - Containerized and deployed to VPS on Oracle Cloud using Docker Compose to run in production
+    - Built a *real-time* Minecraft-Discord player status bridge using async Rust (Axum, Tokio frameworks) and Java Fabric mod enabling Discord communities to monitor online players
+    - Engineered *high-performance* async architecture with *lock-free* concurrent caching and *heap-free* player-name storage, eliminating mutex contention and heap allocation on high-throughput player events and decreasing disk read/write
+    - Designed hybrid persistence layer combining SQLite for durability with in-memory caching for *sub-millisecond* queries across multiple tenants with multiple linked servers
+    - Containerized and deployed to VPS on Oracle Cloud Infrastructure using Docker Compose to run in production
+  ]
+  #project-heading(
+    [*#link("https://github.com/adhi-thirumala/writing-a-c-compiler-sandler-rs")[#text(fill: blue)[C Compiler]]*],
+  )[
+    - Wrote a C compiler in Rust with a 6-stage pipeline (lexer → parser → semantic analysis → IR → assembly generation → x86-64 code emission) targeting Linux and macOS    
+    - Verified compiler against test case suite of *400+* programs to test functionality
   ]
 ]
 
@@ -130,8 +138,8 @@
 // -------------------- SKILLS --------------------
 #custom-title("Skills")[
   #skills()[
-    *Languages:* Rust, C++, C, Python, Java, HTML, Bash, LaTeX, SQL, Go, Lua, JavaScript, Typescript, CSS, Verilog, MIPS Assembly \
-    *Tools:* Linux, Git, Vim, Huggingface, Maven, Gradle, SQLite, Docker, Docker Compose, PostgreSQL, Vercel, AWS, Oracle Cloud, Google Cloud Platform, Cloudflare (Domain Management), Github Actions CI/CD, Ghidra \
+    *Languages:* Rust, C++, C, Python, Java, HTML, Bash, LaTeX, Typst, SQL, Go, Lua, JavaScript, Typescript, CSS, Verilog, MIPS Assembly \
+    *Tools:* Linux, Git, Vim, Huggingface, Maven, Gradle, SQLite, Docker, Docker Compose, PostgreSQL, Vercel, AWS, Oracle Cloud, Google Cloud Platform, Cloudflare (Domain Management), Github Actions CI/CD, Ghidra, Cargo \
     *Libraries:* pandas, NumPy, Matplotlib, Tensorflow, pyTorch, Sci-Kit Learn, Swing (Java), Spring (Java), Next.JS, React.JS, Flask, LangChain, LangGraph, FastAPI, Axum, Tokio
   ]
 ]
@@ -139,7 +147,8 @@
 // -------------------- RELEVANT COURSEWORK --------------------
 #custom-title("Relevant Coursework")[
   #skills()[
-    *Computer Science:* System Programming, Computer Systems Organization, Data Management in the Cloud, Algorithms and Models of Computation, Data Structures in C++, Computer Architecture, Computational Linguistics \
+    (Bold indicates graduate-level coursework) \
+    *Computer Science:* System Programming, *Computer Systems Organization*, Data Management in the Cloud, Algorithms and Models of Computation, Data Structures in C++, Computer Architecture, Computational Linguistics \
     *Mathematics and Statistics:* Honors Abstract Linear Algebra, Statistics and Probability I, Introduction to Higher Level Math, Multivariable Calculus, Discrete Structures
   ]
 ]
