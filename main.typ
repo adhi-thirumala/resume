@@ -11,8 +11,8 @@
 
 #show: resume.with(
   top-margin: 0.2in,
-  font: "Google Sans Mono",
-  personal-info-font-size: 8.5pt,
+  font: "Libertinus Serif",
+  personal-info-font-size: 8pt,
   author-position: center,
   personal-info-position: center,
   author-name: name,
@@ -24,17 +24,17 @@
   phone: phone,
 )
 
-#set text(size: 9pt)
+#set text(size: 9.25pt)
 #set par(leading: 0.5em)
 
 
 // -------------------- EDUCATION --------------------
 #custom-title("Education")[
   #education-heading(
-    "University of Illinois Urbana-Champaign - Siebel School of Computer Science",
+    "University of Ilinois Urbana-Champaign - Siebel School of Computer Science",
     "",
     "Major: Computer Science + Linguistics",
-    "Minor: Mathematics | GPA: 3.82/4.0",
+    "Minor: Mathematics",
     datetime(year: 2024, month: 8, day: 1),
     datetime(year: 2027, month: 5, day: 1),
   )[]
@@ -42,10 +42,19 @@
 
 // -------------------- EXPERIENCE --------------------
 #custom-title("Experience")[
+
   #work-heading(
-    "Machine Learning Intern",
+    "Cloudflare",
+    "Incoming Software Engineering Intern",
+    "Austin. TX",
+    datetime(year: 2026, month: 5, day: 1),
+    datetime(year: 2026, month: 8, day: 1),
+  )[
+  ]
+  #work-heading(
     "Digital Main",
-    "",
+    "Machine Learning Intern",
+    "Sunnyvale, CA",
     datetime(year: 2025, month: 5, day: 1),
     datetime(year: 2025, month: 8, day: 1),
   )[
@@ -68,21 +77,20 @@
   */
 
   #work-heading(
-    "Treasurer",
     "Association for Computing Machinery at Illinois",
-    "",
+    "Treasurer",
+    "Urbana, IL",
     datetime(year: 2025, month: 3, day: 1),
     "Present",
   )[
     - Managed over *\$350k* of organizational funds for largest CS student organization at Illinois with *1000+* total members
     - Migrated accounting and credit card platforms from BILL.com to Ramp to obtain credit limit increase of *2800%* and to streamline reimbursements, onboarding, and reporting workflows
-    - Served as liaison between organization and Siebel School of Computer Science staff to coordinate usage of department-provisioned funds for ACM events such as biannual open house *(500+ attendees)* and various social events
   ]
 
   #work-heading(
-    "Private Policy Debate Coach",
     "Freelance",
-    "",
+    "Private Policy Debate Coach",
+    "Remote",
     datetime(year: 2024, month: 8, day: 1),
     "Present",
   )[
@@ -97,7 +105,7 @@
   )[
     - Trained transformers-based models on shared task dataset for clickbait detection
     - Performed comparative analysis between fine-tuned SLM BERT-based models and Large Language Models on clickbait spoiling task
-    - Utilized Weights and Biases hyperparameter tuning to achieve *~80%* accuracy on shared task
+    - Utilized Weights and Biases hyperparameter tuning to achieve *80+%* accuracy on shared task
     - Results accepted by _The 17th International Workshop on Semantic Evaluation_: Toronto, Canada 2023
   ]
 
@@ -106,14 +114,14 @@
   )[
     - Trained NLP models to perform extractive QA improving performance by *20%* over baseline due to modified RoBERTa tokenizer
     - Utilized crosslingual dataset provided by competing in online competition hosted by Google
-    - Received 26th Annual Carnegie Science Award given to *12* top scientists, entrepreneurs, innovators and educators across the city of Pittsburgh for submitted research
+    - Received 26th Annual Carnegie Science Award given to *12* top scientists, entrepreneurs, innovators and educators across the city of Pittsburgh
   ]
 ]
 
 // -------------------- PROJECTS --------------------
 #custom-title("Projects")[
   #project-heading(
-    [*#link("https://github.com/adhi-thirumala/oxeye")[#text(fill: blue)[Oxeye]]*],
+    [Oxeye *#link("https://github.com/adhi-thirumala/oxeye")[#text(fill: blue)[(Github)]]*],
   )[
     - Built a *real-time* Minecraft-Discord player status bridge using async Rust (Axum, Tokio frameworks) and Java Fabric mod enabling Discord communities to monitor online players
     - Engineered *high-performance* async architecture with *lock-free* concurrent caching and *heap-free* player-name storage, eliminating mutex contention and heap allocation on high-throughput player events and decreasing disk read/write
@@ -121,17 +129,17 @@
     - Containerized and deployed to VPS on Oracle Cloud Infrastructure using Docker Compose to run in production
   ]
   #project-heading(
-    [*#link("https://github.com/adhi-thirumala/writing-a-c-compiler-sandler-rs")[#text(fill: blue)[C Compiler]]*],
+    [C Compiler *#link("https://github.com/adhi-thirumala/writing-a-c-compiler-sandler-rs")[#text(fill: blue)[(Github)]]*],
   )[
-    - Wrote a C compiler in Rust with a 6-stage pipeline (lexer → parser → semantic analysis → IR → assembly generation → x86-64 code emission) targeting Linux and macOS    
-    - Verified compiler against test case suite of *400+* programs to test functionality
+    - Implemented C compiler (C17 Standard) in Rust with a 6-stage pipeline (lexer → parser → semantic analysis → IR → assembly generation → x86-64 code emission) targeting Linux and macOS    
+    - Verified compiler against comprehensive test case suite of *400+* programs to test functionality
   ]
 ]
 
 // -------------------- AWARDS AND COMPETITIONS --------------------
 #custom-title("Awards and Competitions")[
   #project-heading(
-    [*SIGPwny FallCTF: 6th Place (Advanced Track)* in cybersecurity competition across *100+* teams from UIUC],
+    [*UIUC ACM SIGPwny FallCTF: 6th Place (Advanced Track)* in cybersecurity competition across *100+* teams from UIUC],
   )[]
 ]
 
@@ -139,7 +147,7 @@
 #custom-title("Skills")[
   #skills()[
     *Languages:* Rust, C++, C, Python, Java, HTML, Bash, LaTeX, Typst, SQL, Go, Lua, JavaScript, Typescript, CSS, Verilog, MIPS Assembly \
-    *Tools:* Linux, Git, Vim, Huggingface, Maven, Gradle, SQLite, Docker, Docker Compose, PostgreSQL, Vercel, AWS, Oracle Cloud, Google Cloud Platform, Cloudflare (Domain Management), Github Actions CI/CD, Ghidra, Cargo \
+    *Tools:* Linux, Git, Vim, Huggingface, Maven, Gradle, SQLite, Docker, Docker Compose, PostgreSQL, Vercel, AWS, Oracle Cloud, Google Cloud Platform, Cloudflare (Domain Management), Github Actions CI/CD, Ghidra, Cargo, Bun \
     *Libraries:* pandas, NumPy, Matplotlib, Tensorflow, pyTorch, Sci-Kit Learn, Swing (Java), Spring (Java), Next.JS, React.JS, Flask, LangChain, LangGraph, FastAPI, Axum, Tokio
   ]
 ]
@@ -147,8 +155,7 @@
 // -------------------- RELEVANT COURSEWORK --------------------
 #custom-title("Relevant Coursework")[
   #skills()[
-    (Bold indicates graduate-level coursework) \
-    *Computer Science:* System Programming, *Computer Systems Organization*, Data Management in the Cloud, Algorithms and Models of Computation, Data Structures in C++, Computer Architecture, Computational Linguistics \
+    *Computer Science:* System Programming, Computer Systems Organization (Graduate), Data Management in the Cloud, Algorithms and Models of Computation, Data Structures in C++, Computer Architecture, Computational Linguistics \
     *Mathematics and Statistics:* Honors Abstract Linear Algebra, Statistics and Probability I, Introduction to Higher Level Math, Multivariable Calculus, Discrete Structures
   ]
 ]
