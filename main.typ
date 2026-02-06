@@ -60,21 +60,17 @@
   )[
     - Built an asynchronous agentic retrieval-augmented-generation (RAG) system in Python, orchestrating query decomposition and research across web and internal client data (Slack messages, emails, etc.) using LangGraph
     - Utilized FastAPI to create customer-facing production API to stream research process to web client using Server Sent Events (SSE)
-    - Implemented automated agentic source validation, while integrating images and generating charts or tables into final artifact
   ]
 
-  /*
   #work-heading(
     "Course Assistant",
     "University of Illinois Siebel School of Computer Science",
-    "",
+    "Urbana, IL",
     datetime(year: 2026, month: 1, day: 1),
     "Present",
   )[
-    - Selected to be an undergraduate course assistant for CS 225: Data Structures and Algorithms in C++
-    - Assisted students in understanding and learning data structures (graphs, trees, linked lists) through office hours, online forums, and lab sections
+    - Assisted students in understanding and learning data structures (graphs, trees, linked lists) through office hours and online forums
   ]
-  */
 
   #work-heading(
     "Association for Computing Machinery at Illinois",
@@ -84,7 +80,7 @@
     "Present",
   )[
     - Managed over *\$350k* of organizational funds for largest CS student organization at Illinois with *1000+* total members
-    - Migrated accounting and credit card platforms from BILL.com to Ramp to obtain credit limit increase of *2800%* and to streamline reimbursements, onboarding, and reporting workflows
+    - Migrated accounting and credit card platforms from BILL.com to Ramp and Quickbooks to obtain credit limit increase of *2800%* and to streamline reimbursements, onboarding, and reporting workflows
   ]
 
   #work-heading(
@@ -103,8 +99,7 @@
   #project-heading(
     [*Clickbait Classification and Spoiling Using Natural Language Processing #link("https://doi.org/10.48550/arXiv.2306.14907")[#text(fill: blue)[(arXiv)]]*],
   )[
-    - Trained transformers-based models on shared task dataset for clickbait detection
-    - Performed comparative analysis between fine-tuned SLM BERT-based models and Large Language Models on clickbait spoiling task
+    - Performed comparative analysis between fine-tuned SLM BERT-based models and Large Language Models on clickbait spoiling shared task
     - Utilized Weights and Biases hyperparameter tuning to achieve *80+%* accuracy on shared task
     - Results accepted by _The 17th International Workshop on Semantic Evaluation_: Toronto, Canada 2023
   ]
