@@ -69,7 +69,8 @@
     datetime(year: 2026, month: 1, day: 1),
     "Present",
   )[
-    - Assisted students in understanding and learning data structures (graphs, trees, linked lists) through office hours and online forums
+    - Assisted students in understanding and learning data structures in C++ (graphs, trees, linked lists) through office hours and online forums
+    - Developed exam programming questions, test cases, solutions on PrairieLearn platform
   ]
 
   #work-heading(
@@ -120,7 +121,6 @@
   )[
     - Built a *real-time* Minecraft-Discord player status bridge using async Rust (Axum, Tokio frameworks) and Java Fabric mod enabling Discord communities to monitor online players
     - Engineered *high-performance* async architecture with *lock-free* concurrent caching and *heap-free* player-name storage, eliminating mutex contention and heap allocation on high-throughput player events and decreasing disk read/write
-    - Designed hybrid persistence layer combining SQLite for durability with in-memory caching for *sub-millisecond* queries across multiple tenants with multiple linked servers
     - Containerized and deployed to VPS on Oracle Cloud Infrastructure using Docker Compose to run in production
   ]
   #project-heading(
