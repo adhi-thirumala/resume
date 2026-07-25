@@ -23,7 +23,7 @@
 
   phone: phone,
 )
-#set text(size: 11pt)
+#set text(size: 9.5pt)
 #set par(leading: 0.5em)
 
 
@@ -31,7 +31,7 @@
 #custom-title("Education")[
   #education-heading(
     "University of Ilinois Urbana-Champaign - Siebel School of Computer Science",
-    "GPA: `",
+    "GPA: ",
     "Major: Computer Science + Linguistics",
     "Minor: Mathematics",
     datetime(year: 2024, month: 8, day: 1),
@@ -48,7 +48,10 @@
     "Austin. TX",
     datetime(year: 2026, month: 5, day: 1),
     datetime(year: 2026, month: 8, day: 1),
-  )[]
+  )[
+    - Developed test-generation from OpenAPI in Rust for distributed synthetic probe platform on Cloudflare's edge network that runs *750M+* tests per day to support health-mediated software releases and Service Level Objective (SLO) monitoring
+    - 
+  ]
   
   #work-heading(
     "Course Assistant",
@@ -58,7 +61,7 @@
     "Present",
   )[
     - Assisted students in understanding and learning data structures in C++ (graphs, trees, linked lists) through office hours and online forum 
-    - Assisted students in learning systems programming concepts in C (Synchronization, Concurrency, Virtual Memory, Networking, Filesystems, Scheduling)
+    - Assisted students in learning systems programming concepts in C (Synchronization, Concurrency, Networking, Filesystems, Scheduling)
     - Developed exam programming questions, test cases, solutions on PrairieLearn platform
   ]
   #work-heading(
