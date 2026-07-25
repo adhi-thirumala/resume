@@ -31,7 +31,7 @@
 #custom-title("Education")[
   #education-heading(
     "University of Ilinois Urbana-Champaign - Siebel School of Computer Science",
-    "GPA: ",
+    "GPA: 3.86",
     "Major: Computer Science + Linguistics",
     "Minor: Mathematics",
     datetime(year: 2024, month: 8, day: 1),
@@ -49,10 +49,12 @@
     datetime(year: 2026, month: 5, day: 1),
     datetime(year: 2026, month: 8, day: 1),
   )[
-    - Developed test-generation from OpenAPI in Rust for distributed synthetic probe platform on Cloudflare's edge network that runs *750M+* tests per day to support health-mediated software releases and Service Level Objective (SLO) monitoring
-    - 
+    - Developed test-generation tool in Rust for distributed synthetic end-to-end probe platform (Flamingo) on edge network that runs *750M+* tests per day to support health-mediated software releases, Service Level Objective (SLO) monitoring, and company-wide resiliency efforts 
+    - Implemented internal/external-facing API fuzzing service in Rust that utilized edge-network for massively parallel test running over *60k+* nodes over *1375* data centers
+    - Used tool to determine health of Kubernetes service region-failover status to support high availability (HA) API deployment
+    - Extended Kubernetes-based test-scheduling control plane in Go to support bespoke test-scheduling needs for fuzzing service
   ]
-  
+
   #work-heading(
     "Course Assistant",
     "University of Illinois Siebel School of Computer Science",
@@ -60,8 +62,8 @@
     datetime(year: 2026, month: 1, day: 1),
     "Present",
   )[
-    - Assisted students in understanding and learning data structures in C++ (graphs, trees, linked lists) through office hours and online forum 
-    - Assisted students in learning systems programming concepts in C (Synchronization, Concurrency, Networking, Filesystems, Scheduling)
+    - Assisted students in understanding and learning data structures in C++ (graphs, trees, linked lists) through office hours and online forum
+    - Assisted students in learning systems programming concepts in C (synchronization, concurrency, networking, filesystems, scheduling)
     - Developed exam programming questions, test cases, solutions on PrairieLearn platform
   ]
   #work-heading(
@@ -89,6 +91,38 @@
   */
 ]
 
+
+
+// -------------------- SELECTED PUBLICATIONS --------------------
+// -------------------- PROJECTS --------------------
+#custom-title("Research and Projects")[
+  #project-heading(
+    [C Compiler *#link("https://github.com/adhi-thirumala/writing-a-c-compiler-sandler-rs")[#text(fill: blue)[(Github)]]*],
+  )[
+    - Implemented C compiler (C17 Standard) in Rust with hand-rolled recursive-descent parser, iterator-based (lazy) lexer, semantic analysis pass, and x86 code generation for macOS and Linux
+    - Verified compiler against comprehensive test case suite of *400+* programs to test functionality
+  ]
+  #project-heading(
+    [Oxeye *#link("https://github.com/adhi-thirumala/oxeye")[#text(fill: blue)[(Github)]]*],
+  )[
+    - Built a real-time Minecraft–Discord player status bridge (async Rust: Axum/Tokio + Java Fabric mod) with lock-free caching and heap-free name storage, removing mutex contention and allocations on high-throughput events
+    - Containerized with Docker Compose and deployed to production on Oracle Cloud VPS
+  ]
+
+  #project-heading(
+    [*Clickbait Classification and Spoiling Using Natural Language Processing #link("https://doi.org/10.48550/arXiv.2306.14907")[#text(fill: blue)[(arXiv)]]*],
+  )[
+    - Performed analysis between fine-tuned SLM BERT-based models and LLMs on clickbait spoiling shared task to achieve *80+%* accuracy
+    - Results accepted by _The 17th International Workshop on Semantic Evaluation_: Toronto, Canada 2023
+  ]
+  #project-heading(
+    [*Extractive Question Answering(QA) on Queries in Hindi and Tamil #link("https://doi.org/10.48550/arXiv.2210.06356")[#text(fill: blue)[(arXiv)]]*],
+  )[
+    - Trained NLP models in Google competition to perform extractive QA increasing accuracy by *20%* over baseline
+    - Received 26th Annual Carnegie Science Award given to *12* top scientists, entrepreneurs, and innovators across the city of Pittsburgh
+  ]
+]
+
 #custom-title("Leadership")[
   #work-heading(
     "Association for Computing Machinery at Illinois",
@@ -102,39 +136,6 @@
   ]
 ]
 
-// -------------------- SELECTED PUBLICATIONS --------------------
-// -------------------- PROJECTS --------------------
-#custom-title("Research and Projects")[
-  #project-heading(
-    [C Compiler *#link("https://github.com/adhi-thirumala/writing-a-c-compiler-sandler-rs")[#text(fill: blue)[(Github)]]*],
-  )[
-    - Implemented C compiler (C17 Standard) in Rust with a 6-stage pipeline (lexer → parser → semantic analysis → IR → assembly generation → x86-64 code emission) targeting Linux and macOS
-    - Verified compiler against comprehensive test case suite of *400+* programs to test functionality
-  ]
-  #project-heading(
-    [Oxeye *#link("https://github.com/adhi-thirumala/oxeye")[#text(fill: blue)[(Github)]]*],
-  )[
-    - Built a *real-time* Minecraft-Discord player status bridge using async Rust (Axum, Tokio frameworks) and Java Fabric mod enabling Discord communities to monitor online players
-    - Engineered *high-performance* async architecture with *lock-free* concurrent caching and *heap-free* player-name storage, eliminating mutex contention and heap allocation on high-throughput player events and decreasing disk read/write
-    - Containerized and deployed to VPS on Oracle Cloud Infrastructure using Docker Compose to run in production
-  ]
-
-  #project-heading(
-    [*Clickbait Classification and Spoiling Using Natural Language Processing #link("https://doi.org/10.48550/arXiv.2306.14907")[#text(fill: blue)[(arXiv)]]*],
-  )[
-    - Performed analysis between fine-tuned SLM BERT-based models and LLMs on clickbait spoiling shared task to achieve *80+%* accuracy
-    - Results accepted by _The 17th International Workshop on Semantic Evaluation_: Toronto, Canada 2023
-  ]
-  #project-heading(
-    [*Extractive Question Answering(QA) on Queries in Hindi and Tamil #link("https://doi.org/10.48550/arXiv.2210.06356")[#text(fill: blue)[(arXiv)]]*],
-  )[
-    - Trained NLP models in Google competition to perform extractive QA increasing accuracy by *20%* over baseline
-    - Received 26th Annual Carnegie Science Award given to *12* top scientists, entrepreneurs, innovators and educators across the city of Pittsburgh
-  ]
-]
-
-
-
 // -------------------- AWARDS AND COMPETITIONS --------------------
 #custom-title("Awards and Competitions")[
   #project-heading(
@@ -145,16 +146,16 @@
 // -------------------- SKILLS --------------------
 #custom-title("Skills")[
   #skills()[
-    *Languages:* Rust, C++, C, Python, Java, HTML, Bash, LaTeX, Typst, SQL, Go, Lua, JavaScript, Typescript, CSS, Verilog, MIPS Assembly \
-    *Tools:* Linux, Git, Vim, Huggingface, Maven, Gradle, SQLite, Docker, Docker Compose, Kubernetes, PostgreSQL, Vercel, AWS, Oracle Cloud, Google Cloud Platform, Cloudflare (Networking, Developer Platform), Github Actions CI/CD, Ghidra, Cargo, Bun, Prometheus, Grafana  \
-    *Libraries:* Axum, Tokio, pandas, NumPy, Matplotlib, Tensorflow, pyTorch, Sci-Kit Learn, Swing (Java), Spring (Java), Next.JS, React.JS, Flask, LangChain, LangGraph, FastAPI
+    *Languages:* Rust, C++, C, Python, Bash, LaTeX, Typst, SQL, Go, Lua, JavaScript, Typescript, CSS, Verilog, MIPS Assembly, Haskell \
+    *Tools:* Linux, Git, Vim, Huggingface, Docker, Docker Compose, Kubernetes, PostgreSQL, AWS, Oracle Cloud, Google Cloud Platform, Cloudflare (Networking, Developer Platform), Github Actions CI/CD, Ghidra, Cargo, Bun, Prometheus, Grafana, Terraform, Vault (Hashicorp)  \
+    *Libraries:* Axum, Tokio, pandas, NumPy, Matplotlib, Tensorflow, pyTorch, Sci-Kit Learn, React, Flask, LangChain, LangGraph, FastAPI
   ]
 ]
 
 // -------------------- RELEVANT COURSEWORK --------------------
 #custom-title("Relevant Coursework")[
   #skills()[
-    *Computer Science:* Distributed Systems, Compiler Construction, Programming Languages and Compilers, Machine Learning Compilers (Graduate), System Programming, Computer Systems Organization, Data Management in the Cloud, Algorithms and Models of Computation, Data Structures in C++, Computer Architecture, Computational Linguistics \
+    *Computer Science:* Distributed Systems, Compiler Construction, Programming Languages and Compilers, ML Compilers (Graduate), System Programming, Computer Systems Organization, Data Management in the Cloud, Algorithms and Models of Computation, Data Structures in C++, Computer Architecture, Computational Linguistics \
     *Mathematics and Statistics:* Honors Abstract Linear Algebra, Statistics and Probability, Introduction to Higher Level Math, Multivariable Calculus, Discrete Structures
   ]
 ]
