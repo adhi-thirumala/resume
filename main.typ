@@ -23,8 +23,7 @@
 
   phone: phone,
 )
-
-#set text(size: 9.25pt)
+#set text(size: 11pt)
 #set par(leading: 0.5em)
 
 
@@ -32,11 +31,11 @@
 #custom-title("Education")[
   #education-heading(
     "University of Ilinois Urbana-Champaign - Siebel School of Computer Science",
-    "",
+    "GPA: `",
     "Major: Computer Science + Linguistics",
     "Minor: Mathematics",
     datetime(year: 2024, month: 8, day: 1),
-    datetime(year: 2027, month: 5, day: 1),
+    datetime(year: 2028, month: 5, day: 1),
   )[]
 ]
 
@@ -45,11 +44,22 @@
 
   #work-heading(
     "Cloudflare",
-    "Incoming Software Engineering Intern",
+    "Software Engineering Intern",
     "Austin. TX",
     datetime(year: 2026, month: 5, day: 1),
     datetime(year: 2026, month: 8, day: 1),
+  )[]
+  
+  #work-heading(
+    "Course Assistant",
+    "University of Illinois Siebel School of Computer Science",
+    "Urbana, IL",
+    datetime(year: 2026, month: 1, day: 1),
+    "Present",
   )[
+    - Assisted students in understanding and learning data structures in C++ (graphs, trees, linked lists) through office hours and online forum 
+    - Assisted students in learning systems programming concepts in C (Synchronization, Concurrency, Virtual Memory, Networking, Filesystems, Scheduling)
+    - Developed exam programming questions, test cases, solutions on PrairieLearn platform
   ]
   #work-heading(
     "Digital Main",
@@ -62,28 +72,8 @@
     - Utilized FastAPI to create customer-facing production API to stream research process to web client using Server Sent Events (SSE)
   ]
 
-  #work-heading(
-    "Course Assistant",
-    "University of Illinois Siebel School of Computer Science",
-    "Urbana, IL",
-    datetime(year: 2026, month: 1, day: 1),
-    "Present",
-  )[
-    - Assisted students in understanding and learning data structures in C++ (graphs, trees, linked lists) through office hours and online forums
-    - Developed exam programming questions, test cases, solutions on PrairieLearn platform
-  ]
 
-  #work-heading(
-    "Association for Computing Machinery at Illinois",
-    "Treasurer",
-    "Urbana, IL",
-    datetime(year: 2025, month: 3, day: 1),
-    "Present",
-  )[
-    - Managed over *\$350k* of organizational funds for largest CS student organization at Illinois with *1000+* total members
-    - Migrated accounting and credit card platforms from BILL.com to Ramp and Quickbooks to obtain credit limit increase of *2800%* and to streamline reimbursements, onboarding, and reporting workflows
-  ]
-
+  /*
   #work-heading(
     "Freelance",
     "Private Policy Debate Coach",
@@ -93,29 +83,31 @@
   )[
     - Mentored *9* students from under-resourced institutions nationwide, identified through extensive high school competitive debate networking, providing coaching and research skills
   ]
+  */
+]
+
+#custom-title("Leadership")[
+  #work-heading(
+    "Association for Computing Machinery at Illinois",
+    "Treasurer",
+    "Urbana, IL",
+    datetime(year: 2025, month: 3, day: 1),
+    datetime(year: 2026, month: 3, day: 1),
+  )[
+    - Managed over *\$350k* of organizational funds for largest CS student organization at Illinois with *1000+* total members
+    - Migrated accounting and credit card platforms from BILL.com to Ramp and Quickbooks to obtain credit limit increase of *2800%* and to streamline reimbursements, onboarding, and reporting workflows
+  ]
 ]
 
 // -------------------- SELECTED PUBLICATIONS --------------------
-#custom-title("Publications")[
-  #project-heading(
-    [*Clickbait Classification and Spoiling Using Natural Language Processing #link("https://doi.org/10.48550/arXiv.2306.14907")[#text(fill: blue)[(arXiv)]]*],
-  )[
-    - Performed comparative analysis between fine-tuned SLM BERT-based models and Large Language Models on clickbait spoiling shared task
-    - Utilized Weights and Biases hyperparameter tuning to achieve *80+%* accuracy on shared task
-    - Results accepted by _The 17th International Workshop on Semantic Evaluation_: Toronto, Canada 2023
-  ]
-
-  #project-heading(
-    [*Extractive Question Answering(QA) on Queries in Hindi and Tamil #link("https://doi.org/10.48550/arXiv.2210.06356")[#text(fill: blue)[(arXiv)]]*],
-  )[
-    - Trained NLP models to perform extractive QA improving performance by *20%* over baseline due to modified RoBERTa tokenizer
-    - Utilized crosslingual dataset provided by competing in online competition hosted by Google
-    - Received 26th Annual Carnegie Science Award given to *12* top scientists, entrepreneurs, innovators and educators across the city of Pittsburgh
-  ]
-]
-
 // -------------------- PROJECTS --------------------
-#custom-title("Projects")[
+#custom-title("Research and Projects")[
+  #project-heading(
+    [C Compiler *#link("https://github.com/adhi-thirumala/writing-a-c-compiler-sandler-rs")[#text(fill: blue)[(Github)]]*],
+  )[
+    - Implemented C compiler (C17 Standard) in Rust with a 6-stage pipeline (lexer → parser → semantic analysis → IR → assembly generation → x86-64 code emission) targeting Linux and macOS
+    - Verified compiler against comprehensive test case suite of *400+* programs to test functionality
+  ]
   #project-heading(
     [Oxeye *#link("https://github.com/adhi-thirumala/oxeye")[#text(fill: blue)[(Github)]]*],
   )[
@@ -123,13 +115,22 @@
     - Engineered *high-performance* async architecture with *lock-free* concurrent caching and *heap-free* player-name storage, eliminating mutex contention and heap allocation on high-throughput player events and decreasing disk read/write
     - Containerized and deployed to VPS on Oracle Cloud Infrastructure using Docker Compose to run in production
   ]
+
   #project-heading(
-    [C Compiler *#link("https://github.com/adhi-thirumala/writing-a-c-compiler-sandler-rs")[#text(fill: blue)[(Github)]]*],
+    [*Clickbait Classification and Spoiling Using Natural Language Processing #link("https://doi.org/10.48550/arXiv.2306.14907")[#text(fill: blue)[(arXiv)]]*],
   )[
-    - Implemented C compiler (C17 Standard) in Rust with a 6-stage pipeline (lexer → parser → semantic analysis → IR → assembly generation → x86-64 code emission) targeting Linux and macOS    
-    - Verified compiler against comprehensive test case suite of *400+* programs to test functionality
+    - Performed analysis between fine-tuned SLM BERT-based models and LLMs on clickbait spoiling shared task to achieve *80+%* accuracy
+    - Results accepted by _The 17th International Workshop on Semantic Evaluation_: Toronto, Canada 2023
+  ]
+  #project-heading(
+    [*Extractive Question Answering(QA) on Queries in Hindi and Tamil #link("https://doi.org/10.48550/arXiv.2210.06356")[#text(fill: blue)[(arXiv)]]*],
+  )[
+    - Trained NLP models in Google competition to perform extractive QA increasing accuracy by *20%* over baseline
+    - Received 26th Annual Carnegie Science Award given to *12* top scientists, entrepreneurs, innovators and educators across the city of Pittsburgh
   ]
 ]
+
+
 
 // -------------------- AWARDS AND COMPETITIONS --------------------
 #custom-title("Awards and Competitions")[
@@ -142,15 +143,15 @@
 #custom-title("Skills")[
   #skills()[
     *Languages:* Rust, C++, C, Python, Java, HTML, Bash, LaTeX, Typst, SQL, Go, Lua, JavaScript, Typescript, CSS, Verilog, MIPS Assembly \
-    *Tools:* Linux, Git, Vim, Huggingface, Maven, Gradle, SQLite, Docker, Docker Compose, PostgreSQL, Vercel, AWS, Oracle Cloud, Google Cloud Platform, Cloudflare (Domain Management), Github Actions CI/CD, Ghidra, Cargo, Bun \
-    *Libraries:* pandas, NumPy, Matplotlib, Tensorflow, pyTorch, Sci-Kit Learn, Swing (Java), Spring (Java), Next.JS, React.JS, Flask, LangChain, LangGraph, FastAPI, Axum, Tokio
+    *Tools:* Linux, Git, Vim, Huggingface, Maven, Gradle, SQLite, Docker, Docker Compose, Kubernetes, PostgreSQL, Vercel, AWS, Oracle Cloud, Google Cloud Platform, Cloudflare (Networking, Developer Platform), Github Actions CI/CD, Ghidra, Cargo, Bun, Prometheus, Grafana  \
+    *Libraries:* Axum, Tokio, pandas, NumPy, Matplotlib, Tensorflow, pyTorch, Sci-Kit Learn, Swing (Java), Spring (Java), Next.JS, React.JS, Flask, LangChain, LangGraph, FastAPI
   ]
 ]
 
 // -------------------- RELEVANT COURSEWORK --------------------
 #custom-title("Relevant Coursework")[
   #skills()[
-    *Computer Science:* System Programming, Computer Systems Organization (Graduate), Data Management in the Cloud, Algorithms and Models of Computation, Data Structures in C++, Computer Architecture, Computational Linguistics \
-    *Mathematics and Statistics:* Honors Abstract Linear Algebra, Statistics and Probability I, Introduction to Higher Level Math, Multivariable Calculus, Discrete Structures
+    *Computer Science:* Distributed Systems, Compiler Construction, Programming Languages and Compilers, Machine Learning Compilers (Graduate), System Programming, Computer Systems Organization, Data Management in the Cloud, Algorithms and Models of Computation, Data Structures in C++, Computer Architecture, Computational Linguistics \
+    *Mathematics and Statistics:* Honors Abstract Linear Algebra, Statistics and Probability, Introduction to Higher Level Math, Multivariable Calculus, Discrete Structures
   ]
 ]
