@@ -56,8 +56,8 @@
   ]
 
   #work-heading(
-    "Course Assistant",
     "University of Illinois Siebel School of Computer Science",
+    "Course Assistant",
     "Urbana, IL",
     datetime(year: 2026, month: 1, day: 1),
     "Present",
