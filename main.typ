@@ -4,7 +4,7 @@
 // Put your personal information here
 #let name = "Adhitya Thirumala"
 #let email = "me@adhithirumala.com"
-#let github = "adhi-thirumala"
+#let github = "adhi-thirumala" 
 #let linkedin = "adhitya-thirumala"
 #let personal-site = "adhithirumala.com"
 #let phone = "ORCID: 0009-0003-6634-7066"
@@ -23,7 +23,7 @@
 
   phone: phone,
 )
-#set text(size: 9.5pt)
+#set text(size: 9.25pt)
 #set par(leading: 0.5em)
 
 
@@ -147,7 +147,7 @@
 #custom-title("Skills")[
   #skills()[
     *Languages:* Rust, C++, C, Python, Bash, LaTeX, Typst, SQL, Go, Lua, JavaScript, Typescript, CSS, Verilog, MIPS Assembly, Haskell \
-    *Tools:* Linux, Git, Vim, Huggingface, Docker, Docker Compose, Kubernetes, PostgreSQL, AWS, Oracle Cloud, Google Cloud Platform, Cloudflare (Networking, Developer Platform), Github Actions CI/CD, Ghidra, Cargo, Bun, Prometheus, Grafana, Terraform, Vault (Hashicorp)  \
+    *Tools:* Linux, Git, Vim, Huggingface, Docker, Docker Compose, Kubernetes, PostgreSQL, AWS, Oracle Cloud, Google Cloud Platform, Cloudflare (Networking, Developer Platform), Github Actions CI/CD, Ghidra, Cargo, Bun, Prometheus, Grafana, Terraform, Vault (Hashicorp), MLIR, JAX, LLVM, PyTorch, Tensorflow  \
     *Libraries:* Axum, Tokio, pandas, NumPy, Matplotlib, Tensorflow, pyTorch, Sci-Kit Learn, React, Flask, LangChain, LangGraph, FastAPI
   ]
 ]
