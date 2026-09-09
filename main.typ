@@ -147,8 +147,8 @@
 #custom-title("Skills")[
   #skills()[
     *Languages:* Rust, C++, C, Python, Bash, LaTeX, Typst, SQL, Go, Lua, JavaScript, Typescript, CSS, Verilog, MIPS Assembly, Haskell \
-    *Tools:* Linux, Git, Vim, Huggingface, Docker, Docker Compose, Kubernetes, PostgreSQL, AWS, Oracle Cloud, Google Cloud Platform, Cloudflare (Networking, Developer Platform), Github Actions CI/CD, Ghidra, Cargo, Bun, Prometheus, Grafana, Terraform, Vault (Hashicorp), MLIR, JAX, LLVM, PyTorch, Tensorflow  \
-    *Libraries:* Axum, Tokio, pandas, NumPy, Matplotlib, Tensorflow, pyTorch, Sci-Kit Learn, React, Flask, LangChain, LangGraph, FastAPI
+    *Tools:* Linux, Git, Vim, Huggingface, Docker, Docker Compose, Kubernetes, PostgreSQL, AWS, Oracle Cloud, Google Cloud Platform, Cloudflare (Networking, Developer Platform), Github Actions CI/CD, Ghidra, Cargo, Bun, Prometheus, Grafana, Terraform, Vault (Hashicorp), MLIR, JAX, LLVM, PyTorch, Tensorflow, gRPC, Protobuf, Cap'n proto \
+    *Libraries:* Axum, Tokio, tonic, pandas, NumPy, Matplotlib, Tensorflow, pyTorch, Sci-Kit Learn, React, Flask, LangChain, LangGraph, FastAPI
   ]
 ]
 
