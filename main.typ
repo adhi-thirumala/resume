@@ -30,7 +30,7 @@
 // -------------------- EDUCATION --------------------
 #custom-title("Education")[
   #education-heading(
-    "University of Ilinois Urbana-Champaign - Siebel School of Computer Science",
+    "University of Illinois Urbana-Champaign - Siebel School of Computer Science",
     "GPA: 3.86",
     "Major: Computer Science + Linguistics",
     "Minor: Mathematics",
@@ -45,7 +45,7 @@
   #work-heading(
     "Cloudflare",
     "Software Engineering Intern",
-    "Austin. TX",
+    "Austin, TX",
     datetime(year: 2026, month: 5, day: 1),
     datetime(year: 2026, month: 8, day: 1),
   )[
@@ -74,7 +74,7 @@
     datetime(year: 2025, month: 8, day: 1),
   )[
     - Built an asynchronous agentic retrieval-augmented-generation (RAG) system in Python, orchestrating query decomposition and research across web and internal client data (Slack messages, emails, etc.) using LangGraph
-    - Utilized FastAPI to create customer-facing production API to stream research process to web client using Server Sent Events (SSE)
+    - Utilized FastAPI to create customer-facing production API to stream research process to web client using Server-sent Events (SSE)
   ]
 
 
@@ -147,7 +147,7 @@
 #custom-title("Skills")[
   #skills()[
     *Languages:* Rust, C++, C, Python, Bash, LaTeX, Typst, SQL, Go, Lua, JavaScript, Typescript, CSS, Verilog, MIPS Assembly, Haskell \
-    *Tools:* Linux, Git, Vim, Huggingface, Docker, Docker Compose, Kubernetes, PostgreSQL, AWS, Oracle Cloud, Google Cloud Platform, Cloudflare (Networking, Developer Platform), Github Actions CI/CD, Ghidra, Cargo, Bun, Prometheus, Grafana, Terraform, Vault (Hashicorp), MLIR, JAX, LLVM, PyTorch, Tensorflow, gRPC, Protobuf, Cap'n proto \
+    *Tools:* Linux, Git, Vim, Huggingface, Docker, Docker Compose, Kubernetes, PostgreSQL, AWS, Oracle Cloud, Google Cloud Platform, Cloudflare (Networking, Developer Platform), Github Actions CI/CD, Ghidra, Cargo, Bun, Prometheus, Grafana, Terraform, Vault (Hashicorp), MLIR, JAX, LLVM, PyTorch, gRPC, Protobuf, Cap'n proto \
     *Libraries:* Axum, Tokio, tonic, pandas, NumPy, Matplotlib, Tensorflow, pyTorch, Sci-Kit Learn, React, Flask, LangChain, LangGraph, FastAPI
   ]
 ]
