@@ -97,17 +97,27 @@
 // -------------------- PROJECTS --------------------
 #custom-title("Research and Projects")[
   #project-heading(
+    [Distributed Filesystem - Rust, Tokio, Tonic, gRPC, Protobuf],
+  )[
+    - Built fault-tolerant distributed filesystem in Rust based on Hadoop Filesystem (HDFS) using Tokio and gRPC (Tonic) that scales to 50+ nodes
+    - Implemented distributed consensus protocol (Raft) and key-value store to provide foundations for filesystem
+    - Designed gossip-style health-checking system with cancellable timers for failure detection
+    - Developed distributed grep tool to filter for logs emitted by above systems
+  ]
+  #project-heading(
     [C Compiler *#link("https://github.com/adhi-thirumala/writing-a-c-compiler-sandler-rs")[#text(fill: blue)[(Github)]]*],
   )[
     - Implemented C compiler (C17 Standard) in Rust with hand-rolled recursive-descent parser, iterator-based (lazy) lexer, semantic analysis pass, and x86 code generation for macOS and Linux
     - Verified compiler against comprehensive test case suite of *400+* programs to test functionality
   ]
+  /*
   #project-heading(
     [Oxeye *#link("https://github.com/adhi-thirumala/oxeye")[#text(fill: blue)[(Github)]]*],
   )[
     - Built a real-time Minecraft–Discord player status bridge (async Rust: Axum/Tokio + Java Fabric mod) with lock-free caching and heap-free name storage, removing mutex contention and allocations on high-throughput events
     - Containerized with Docker Compose and deployed to production on Oracle Cloud VPS
   ]
+*/
 
   #project-heading(
     [*Clickbait Classification and Spoiling Using Natural Language Processing #link("https://doi.org/10.48550/arXiv.2306.14907")[#text(fill: blue)[(arXiv)]]*],
