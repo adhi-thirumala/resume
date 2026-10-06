@@ -99,7 +99,7 @@
   #project-heading(
     [Distributed Filesystem - Rust, Tokio, Tonic, gRPC, Protobuf],
   )[
-    - Built fault-tolerant distributed filesystem in Rust based on Hadoop Filesystem (HDFS) using Tokio and gRPC (Tonic) that scales to 50+ nodes
+    - Built fault-tolerant distributed filesystem in Rust based on Hadoop Distributed Filesystem (HDFS) using Tokio and gRPC (Tonic) that scales to 50+ nodes
     - Implemented distributed consensus protocol (Raft) and key-value store to provide foundations for filesystem
     - Designed gossip-style health-checking system with cancellable timers for failure detection
     - Developed distributed grep tool to filter for logs emitted by above systems
