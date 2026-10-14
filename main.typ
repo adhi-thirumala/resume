@@ -97,10 +97,9 @@
 // -------------------- PROJECTS --------------------
 #custom-title("Research and Projects")[
   #project-heading(
-    [Distributed Filesystem - Rust, Tokio, Tonic, gRPC, Protobuf],
+    [Distributed Key Value Store - Rust, Tokio, Tonic, gRPC, Protobuf],
   )[
-    - Built distributed filesystem in Rust based on Hadoop Distributed Filesystem (HDFS) using Tokio and gRPC (Tonic) that scales to 50+ nodes
-    - Implemented distributed consensus protocol (Raft) and key-value store to provide foundations for filesystem
+    - Built distributed KV store in Rust based on Apache Cassandra using Tokio and gRPC (Tonic) that scales to 150+ nodes
     - Designed gossip-style health-checking system with cancellable timers for failure detection
     - Developed distributed grep tool to filter for logs emitted by above systems
   ]
